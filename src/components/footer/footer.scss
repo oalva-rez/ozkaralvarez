@@ -1,0 +1,83 @@
+@import "../../styles/fonts";
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+footer {
+  display: flex;
+  padding: $layout-padding-vertical $layout-padding-horizontal;
+  position: relative;
+  & > * {
+    flex: 1;
+  }
+  & > *:first-child::after {
+    @include pseudo;
+    width: 1px;
+    height: 66px;
+    bottom: 0;
+    left: calc($layout-padding-horizontal + 10px);
+    background-color: $dark-grey;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    position: absolute;
+    bottom: 70px;
+    left: calc($layout-padding-horizontal + 4px);
+    i {
+      color: $dark-grey;
+      font-size: 20px;
+      margin-bottom: 30px;
+      position: relative;
+      bottom: 0;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: $cyan;
+        bottom: 3px;
+      }
+    }
+  }
+
+  & > *:nth-child(2) {
+    text-align: center;
+    align-self: flex-end;
+    a {
+      color: $dark-grey;
+      font-family: "SFMono", monospace;
+      font-size: 12px;
+      font-weight: 200;
+      color: $dark-grey;
+      transition: color 0.2s ease-in-out;
+    }
+    a:hover {
+      color: $cyan;
+    }
+  }
+  & > *:last-child {
+    &::after {
+      @include pseudo;
+      width: 1px;
+      height: 66px;
+      bottom: 0;
+      right: calc($layout-padding-horizontal + 3px);
+      background-color: $dark-grey;
+    }
+    a {
+      transform: rotate(90deg);
+      position: absolute;
+      right: 2px;
+      top: -120px;
+      text-decoration: none;
+      color: $dark-grey;
+      font-family: "SFMono", monospace;
+      font-size: 12px;
+      font-weight: 200;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: $cyan;
+        top: -128px;
+      }
+    }
+  }
+}

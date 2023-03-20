@@ -1,0 +1,47 @@
+@import "../../styles/fonts";
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+$nav-margin: 1.7rem;
+
+header {
+  display: flex;
+  padding: $layout-padding-vertical calc($layout-padding-horizontal - 18px);
+  justify-content: space-between;
+  img {
+    width: 52px;
+    height: auto;
+  }
+  nav {
+    display: flex;
+    ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      margin-right: $nav-margin;
+      li {
+        margin-left: $nav-margin;
+        a {
+          color: $light-grey;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 200;
+          &:hover {
+            color: $cyan;
+          }
+        }
+        span {
+          color: $cyan;
+          font-family: "SFMono";
+        }
+      }
+    }
+    button {
+      @include button($cyan, $darker-blue, $dark-blue, 106px, 40px);
+      font-weight: 200;
+    }
+  }
+  ul {
+    display: flex;
+  }
+}
