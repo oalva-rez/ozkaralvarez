@@ -8,12 +8,51 @@ header {
   display: flex;
   padding: $layout-padding-vertical calc($layout-padding-horizontal - 18px);
   justify-content: space-between;
+  background-color: $darker-blue;
+  min-width: 100vw;
+  position: fixed;
+  top: 0;
+  transition: all 0.2s;
+
+  &.header--hidden {
+    top: -5.6rem;
+  }
+  &.header--scrolling {
+    background-color: rgba(11, 25, 45, 0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+    padding: calc($layout-padding-vertical - 15px)
+      calc($layout-padding-horizontal - 18px);
+  }
+  .menu-open-logo {
+    z-index: 9999;
+  }
   img {
     width: 52px;
     height: auto;
   }
   nav {
     display: flex;
+
+    // if mobile
+    &.mobile-nav {
+      flex-direction: column;
+      min-width: 100%;
+      justify-content: center;
+      gap: 3rem;
+      ul {
+        flex-direction: column;
+        gap: 3rem;
+        li {
+          a {
+            font-size: 20px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    // if desktop
     ul {
       display: flex;
       align-items: center;
@@ -39,9 +78,52 @@ header {
     button {
       @include button($cyan, $darker-blue, $dark-blue, 106px, 40px);
       font-weight: 200;
+      align-self: center;
     }
   }
-  ul {
-    display: flex;
+}
+.bm-burger-button {
+  position: relative;
+  width: 36px;
+  height: 30px;
+  right: 0;
+  top: 10px;
+  span {
+    background-color: $cyan;
   }
+  .bm-burger-bars:first-child {
+    height: 2px !important;
+    width: 37px !important;
+  }
+  .bm-burger-bars:nth-child(2) {
+    height: 2px !important;
+    width: 29px !important;
+    left: initial !important;
+  }
+  .bm-burger-bars:nth-child(3) {
+    height: 2px !important;
+    width: 19px !important;
+    left: initial !important;
+  }
+}
+
+.bm-overlay {
+  background-color: rgba(11, 25, 45, 0.399) !important;
+  backdrop-filter: blur(5px) !important;
+  width: 100vw !important;
+  right: 0px !important;
+  top: 0px !important;
+  min-height: 100vh !important;
+}
+.bm-menu-wrap {
+  right: 0px !important;
+  top: 0px !important;
+  min-height: 100vh !important;
+  width: 65vw !important;
+  background-color: $dark-blue !important;
+  transition: all 0.2s ease 0s !important;
+}
+
+.bm-menu {
+  z-index: 9999 !important;
 }

@@ -1,8 +1,8 @@
 import React from "react";
 
-function Footer() {
+function Footer({ isMobile }) {
   return (
-    <footer>
+    <footer className={isMobile ? "footer--mobile" : null}>
       <div>
         <ul>
           <li>
