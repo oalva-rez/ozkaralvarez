@@ -9,10 +9,11 @@ header {
   padding: $layout-padding-vertical calc($layout-padding-horizontal - 18px);
   justify-content: space-between;
   background-color: $darker-blue;
-  min-width: 100vw;
+  min-width: 100%;
   position: fixed;
   top: 0;
   transition: all 0.2s;
+  z-index: 9999;
 
   &.header--hidden {
     top: -5.6rem;
@@ -110,7 +111,8 @@ header {
 .bm-overlay {
   background-color: rgba(11, 25, 45, 0.399) !important;
   backdrop-filter: blur(5px) !important;
-  width: 100vw !important;
+  width: 100% !important;
+  height: 100% !important;
   right: 0px !important;
   top: 0px !important;
   min-height: 100vh !important;
@@ -126,4 +128,20 @@ header {
 
 .bm-menu {
   z-index: 9999 !important;
+}
+
+@include media(555px) {
+  .home {
+    margin-right: 40px;
+    margin-left: 40px;
+    .image-pane {
+      .ozkar-image {
+        max-width: 288px;
+      }
+      .image-decal {
+        width: 288px;
+        height: 320px;
+      }
+    }
+  }
 }

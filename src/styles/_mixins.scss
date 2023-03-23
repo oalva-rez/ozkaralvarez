@@ -18,3 +18,9 @@
     background-color: $hover-bg-color;
   }
 }
+
+@mixin media($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}

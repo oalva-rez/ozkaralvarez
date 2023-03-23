@@ -1,36 +1,73 @@
+// sfmono
 @font-face {
   font-family: "SFMono";
   src: local("SFMono"),
-    url(./assets/fonts/SFMono/SF-Mono-Light.otf) format("opentype");
+    url(../../src/assets/fonts/SFMono/SF-Mono-Light.otf) format("opentype");
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: "SFMono";
   src: local("SFMono"),
-    url(./assets/fonts/SFMono/SF-Mono-Regular.otf) format("opentype");
+    url(../../assets/fonts/SFMono/SF-Mono-Regular.otf) format("opentype");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "SFMono";
   src: local("SFMono"),
-    url(./assets/fonts/SFMono/SF-Mono-Semibold.otf) format("opentype");
+    url(../../assets/fonts/SFMono/SF-Mono-Semibold.otf) format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "SFMono";
   src: local("SFMono"),
-    url(./assets/fonts/SFMono/SF-Mono-Bold.otf) format("opentype");
+    url(../../src/assets/fonts/SFMono/SF-Mono-Bold.otf) format("opentype");
   font-weight: 500;
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Calibre";
-  src: local("calibre"),
-    url(./assets/fonts/Calibre/CalibreRegular.otf) format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
+// calibre
+// @font-face {
+//   font-family: "calibre";
+//   src: local("calibre"),
+//     url(../../src/assets/fonts/calibre/CalibreThin.otf) format("opentype");
+//   font-weight: 100;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: "calibre";
+//   src: local("calibre"),
+//     url(../../src/assets/fonts/calibre/CalibreLight.otf) format("opentype");
+//   font-weight: 200;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: "calibre";
+//   src: local("calibre"),
+//     url(../../src/assets/fonts/calibre/CalibreRegular.otf) format("opentype");
+//   font-weight: 300;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: "calibre";
+//   src: local("calibre"),
+//     url(../../assets/fonts/calibre/CalibreSemiBold.otf) format("opentype");
+//   font-weight: 400;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: "calibre";
+//   src: local("calibre"),
+//     url(../../assets/fonts/calibre/CalibreBold.otf) format("opentype");
+//   font-weight: 500;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: "calibre";
+//   src: local("calibre"),
+//     url(../../assets/fonts/calibre/CalibreBlack.otf) format("opentype");
+//   font-weight: 600;
+//   font-style: normal;
+// }

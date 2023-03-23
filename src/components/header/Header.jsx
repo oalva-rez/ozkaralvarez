@@ -72,7 +72,7 @@ function Header({ isMobile }) {
   }
   return (
     <header className={getScrollClass()}>
-      <a href="/home" className={isMenuOpen ? "menu-open-logo" : null}>
+      <a href="/" className={isMenuOpen ? "menu-open-logo" : null}>
         <img src={logo} alt="Logo" />
         <span className="sr-only">Home</span>
       </a>
