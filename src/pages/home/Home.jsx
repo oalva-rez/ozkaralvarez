@@ -1,10 +1,10 @@
 import React from "react";
-import react from "../../assets/reactjs.png";
-import mongodb from "../../assets/mongodb.png";
-import nodejs from "../../assets/nodejs.png";
-import mysql from "../../assets/mysql.png";
-import sass from "../../assets/sass.png";
-import typescript from "../../assets/typescript.png";
+import react from "../../assets/tech-icons/reactjs.png";
+import mongodb from "../../assets/tech-icons/mongodb.png";
+import nodejs from "../../assets/tech-icons/nodejs.png";
+import mysql from "../../assets/tech-icons/mysql.png";
+import sass from "../../assets/tech-icons/sass.png";
+import typescript from "../../assets/tech-icons/typescript.png";
 import ozkar from "../../assets/ozkar-light.webp";
 
 function Home() {

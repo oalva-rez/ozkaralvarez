@@ -3,6 +3,12 @@
   display: $display;
   position: $pos;
 }
+@mixin page-layout() {
+  display: flex;
+  flex-direction: column;
+  margin-right: $content-margin-horizontal;
+  margin-left: $content-margin-horizontal;
+}
 
 @mixin button($color, $bg-color, $hover-bg-color, $width, $height) {
   color: $color;

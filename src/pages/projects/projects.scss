@@ -1,0 +1,27 @@
+@import "../../styles/fonts";
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.projects {
+  @include page-layout();
+  max-width: 1000px;
+  align-self: center;
+  justify-self: center;
+  h1 {
+    font-family: "SFMono", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 18px;
+
+    position: relative;
+  }
+  h1::after {
+    position: absolute;
+    width: 60%;
+    height: 1px;
+    background-color: $dark-grey;
+    bottom: 7px;
+    margin-left: 20px;
+  }
+}

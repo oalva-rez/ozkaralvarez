@@ -32,6 +32,28 @@ html {
 main {
   margin-top: calc($nav-height + $layout-padding-vertical - 4px);
 }
+.about,
+.projects {
+  h1::after {
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    content: "";
+    height: 1px;
+    min-width: 60px;
+    background-color: $dark-grey;
+  }
+  .h1--num {
+    font-family: "SFMono", monospace;
+    font-size: 18px;
+    font-weight: 200;
+    color: $cyan;
+    font-style: normal;
+  }
+  .h1--text {
+    color: $cyan;
+  }
+}
 img {
   min-width: 29px;
   height: auto;
