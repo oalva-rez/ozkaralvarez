@@ -11,13 +11,13 @@
 .secondary--container {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
   grid-gap: 20px;
 }
 .secondary-project {
-  width: 261px;
-  height: 261px;
+  max-width: 261px;
+  max-height: 261px;
   background-color: $dark-blue;
   box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.17);
   padding: 20px;
@@ -71,3 +71,19 @@
     }
   }
 }
+
+@include media(1106px) {
+  .secondary--container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+    justify-items: center;
+    justify-content: center;
+  }
+}
+
+// @include media(1106px) {
+//   .secondary--container {
+//     grid-template-columns: repeat(1, 1fr);
+//     grid-template-rows: repeat(auto-fill, minmax(301px, 1fr));
+//     justify-items: center;
+//   }
+// }
