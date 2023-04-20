@@ -1,7 +1,7 @@
 import React from "react";
 
-function blogPost() {
-  return <main>blogPost</main>;
+function BlogPost() {
+  return <main>BlogPost</main>;
 }
 
-export default blogPost;
+export default BlogPost;

@@ -1,5 +1,6 @@
 @import "./styles/fonts";
 @import "./styles/variables";
+@import "./styles/mixins";
 
 * {
   box-sizing: border-box;
@@ -57,4 +58,20 @@ main {
 img {
   min-width: 29px;
   height: auto;
+}
+
+@include media($mobile-width) {
+  .page-heading {
+    text-align: center;
+  }
+}
+
+@include media(503px) {
+  .page-heading {
+    font-size: 5vw !important;
+    min-width: max-content;
+  }
+  .h1--num {
+    font-size: 3.5vw !important;
+  }
 }

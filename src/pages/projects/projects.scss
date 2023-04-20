@@ -12,13 +12,13 @@
     font-size: 24px;
     font-weight: 500;
     font-style: italic;
-    margin-bottom: 18px;
+    margin-bottom: 0px;
 
     position: relative;
   }
   h1::after {
     position: absolute;
-    width: 60%;
+    width: 56%;
     height: 1px;
     background-color: $dark-grey;
     bottom: 7px;

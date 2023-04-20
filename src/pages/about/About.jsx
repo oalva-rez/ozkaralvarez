@@ -4,7 +4,7 @@ import myVid from "../../assets/my-vid.mp4";
 function About() {
   return (
     <main className="about">
-      <h1>
+      <h1 className="page-heading">
         <span className="h1--num">01.</span> &#123;...ozkar.
         <span className="h1--text">about</span>()&#125;
       </h1>
