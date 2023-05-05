@@ -33,16 +33,27 @@ html {
 main {
   margin-top: calc($nav-height + $layout-padding-vertical - 4px);
 }
+
 .about,
-.projects {
+.projects,
+.blog {
+  h1 {
+    font-size: 24px;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 0px;
+    position: relative;
+  }
   h1::after {
     display: inline-block;
     margin-bottom: 8px;
     margin-left: 8px;
     content: "";
     height: 1px;
-    min-width: 60px;
     background-color: $dark-grey;
+    position: absolute;
+    width: 36%;
+    bottom: 7px;
   }
   .h1--num {
     font-family: "SFMono", monospace;

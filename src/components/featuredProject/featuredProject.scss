@@ -5,9 +5,12 @@
 $negative-margin: -60px;
 
 .featured--projects {
+  max-width: max-content;
+  align-self: center;
+  margin-top: 40px;
   .project {
     display: flex;
-    margin: 40px 0;
+    margin: 0 0 $project-gap;
 
     .project--image {
       position: relative;
@@ -166,7 +169,7 @@ $negative-margin: -60px;
 @include media(829px) {
   .projects {
     .image-overlay {
-      background-color: #122240e8 !important;
+      background-color: #122240f5 !important;
     }
     .project {
       position: relative;
@@ -189,6 +192,7 @@ $negative-margin: -60px;
     .p-fp,
     .p-title {
       padding-left: 20px !important;
+      padding-bottom: 5px !important;
     }
     .p-title {
       font-size: 30px !important;
@@ -217,8 +221,8 @@ $negative-margin: -60px;
 }
 @include media($mobile-width) {
   .projects {
-    margin-right: 60px;
-    margin-left: 60px;
+    margin-right: $mobile-margin;
+    margin-left: $mobile-margin;
     h1::after {
       display: none;
     }
@@ -229,6 +233,9 @@ $negative-margin: -60px;
     min-height: 275px !important;
     .project--content {
       min-width: 100% !important;
+      .p-title {
+        font-size: 24px !important;
+      }
     }
   }
 }

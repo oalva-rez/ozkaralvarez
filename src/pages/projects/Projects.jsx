@@ -7,7 +7,7 @@ function Projects() {
   return (
     <main className="projects">
       <h1 className="page-heading">
-        <span className="h1--num">01.</span> [...ozkar.
+        <span className="h1--num">02.</span> [...ozkar.
         <span className="h1--text">projects</span>()]
       </h1>
       <div className="featured--projects">

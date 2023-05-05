@@ -41,8 +41,7 @@ function Header({ isMobile }) {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
       // If the user is scrolling up or top of page, show the navbar
-      const visible =
-        prevScrollPos > currentScrollPos || currentScrollPos === 0;
+      const visible = prevScrollPos > currentScrollPos || currentScrollPos < 10;
       setIsScrollingUp(
         prevScrollPos > currentScrollPos && currentScrollPos > 0
       );

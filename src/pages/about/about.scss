@@ -120,8 +120,8 @@
 }
 @include media(714px) {
   .about {
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: $mobile-margin;
+    margin-left: $mobile-margin;
     h1 {
       min-width: max-content;
     }

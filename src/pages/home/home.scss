@@ -34,7 +34,7 @@ $text-margin: 12px;
     }
     h2 {
       font-family: "Calibre", sans-serif;
-      font-size: clamp(32px, 4vw, 64px);
+      font-size: clamp(32px, 3.5vw, 64px);
 
       font-weight: 600;
       color: $dark-grey;
@@ -132,10 +132,13 @@ $text-margin: 12px;
     max-width: max-content;
     .content-pane {
       h1 {
-        font-size: clamp(32px, 6vw, 64px);
+        font-size: clamp(10%, 6vw, 64px);
       }
       h2 {
-        font-size: clamp(32px, 6vw, 64px);
+        font-size: clamp(10%, 6vw, 64px);
+      }
+      p {
+        font-size: clamp(10%, 6vw, 64px);
       }
     }
     .image-pane {
@@ -171,6 +174,30 @@ $text-margin: 12px;
       .image-decal {
         width: 288px;
         height: 320px;
+      }
+    }
+  }
+}
+
+@include media(414px) {
+  .home {
+    .image-pane {
+      .ozkar-image {
+        width: 245px !important;
+      }
+      .image-decal {
+        width: 245px !important;
+        height: 298px !important;
+        top: 0px !important;
+      }
+    }
+    .content-pane {
+      .tech-stack img {
+        width: 100% !important;
+        flex: 1 !important;
+      }
+      .home--buttons button {
+        width: 100% !important;
       }
     }
   }

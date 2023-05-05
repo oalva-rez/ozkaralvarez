@@ -7,6 +7,7 @@ import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
+import Code404 from "./pages/Code404/Code404";
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -31,6 +32,7 @@ function App() {
           <Route exact path="/projects" element={<Projects />} />
           <Route exact path="/blog" element={<Blog />} />
           <Route exact path="/contact" element={<Contact />} />
+          <Route path="*" element={<Code404 />} />
         </Routes>
         <Footer isMobile={isMobile} />
       </BrowserRouter>

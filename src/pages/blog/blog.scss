@@ -1,0 +1,40 @@
+@import "../../styles/fonts";
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.blog {
+  @include page-layout();
+  width: 70%;
+  justify-self: center;
+  h1 {
+    margin-bottom: 40px;
+  }
+  .blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(351px, 1fr));
+    gap: 40px;
+  }
+}
+
+@include media($mobile-width) {
+  .blog {
+    h1::after {
+      display: none;
+    }
+  }
+}
+@include media(696px) {
+  .blog {
+    .blog-container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+@include media(544px) {
+  .blog {
+    margin-right: $mobile-margin;
+    margin-left: $mobile-margin;
+    width: initial;
+  }
+}
