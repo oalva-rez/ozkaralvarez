@@ -6,11 +6,11 @@ function SecondaryProject({ project }) {
       <div className="sec--heading">
         <h3>{project.title}</h3>
         <div className="sec--links">
-          <a href={project.ghLink} target="_blank" rel="noreferrer">
+          <a href={project.githubUrl} target="_blank" rel="noreferrer">
             <i className="fab fa-github"></i>
           </a>
-          {project.siteLink ? (
-            <a href={project.siteLink} target="_blank" rel="noreferrer">
+          {project.liveUrl ? (
+            <a href={project.liveUrl} target="_blank" rel="noreferrer">
               <i className="fa-solid fa-arrow-up-right-from-square"></i>
             </a>
           ) : null}
@@ -18,7 +18,7 @@ function SecondaryProject({ project }) {
       </div>
       <p className="sec--desc">{project.description}</p>
       <div className="sec--tech">
-        {project.tech.map((tech, index) => (
+        {project.techSelect.map((tech, index) => (
           <span className="sec-tech-name" key={index + tech.name}>
             {tech.name}
           </span>

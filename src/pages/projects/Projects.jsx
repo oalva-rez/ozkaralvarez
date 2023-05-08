@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import projectsData from "../../../projectsData";
 import FeaturedProject from "../../components/featuredProject/FeaturedProject";
 import SecondaryProject from "../../components/secondaryProject/SecondaryProject";
+import { getProjects } from "../../../ApiLibrary";
 
 function Projects() {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    (async () => {
+      const projects = await getProjects();
+      setProjects(projects.user.projects);
+    })();
+  }, []);
+  console.log(projects);
   return (
     <main className="projects">
       <h1 className="page-heading">
@@ -11,8 +21,8 @@ function Projects() {
         <span className="h1--text">projects</span>()]
       </h1>
       <div className="featured--projects">
-        {projectsData.map((project, index) => {
-          if (project.isFeatured) {
+        {projects.map((project, index) => {
+          if (project.featured) {
             return (
               <FeaturedProject project={project} key={index + project.title} />
             );
@@ -22,8 +32,8 @@ function Projects() {
       <div className="noteworthy--projects">
         <h2>Other Noteworthy Projects</h2>
         <div className="secondary--container">
-          {projectsData.map((project, index) => {
-            if (!project.isFeatured) {
+          {projects.map((project, index) => {
+            if (!project.featured) {
               return (
                 <SecondaryProject
                   project={project}

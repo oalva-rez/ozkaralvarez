@@ -7,32 +7,49 @@
     background-color: $dark-blue;
     box-shadow: 0px 5px 17px 0px rgba(0, 0, 0, 0.22);
     min-height: 351px;
-    img {
+    display: flex;
+    flex-direction: column;
+    .img-container {
+      height: 192px;
       width: 100%;
-      height: auto;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
     }
+
     .blog-card-content {
       padding: 2%;
       display: flex;
       flex-direction: column;
+      flex: 1;
 
       h2 {
         font-family: "SFMono", sans-serif;
         font-size: 20px;
+      }
+      .meta-description {
+        font-weight: 200;
+        font-size: 14px;
+        color: $dark-grey;
+        margin-top: 5px;
         flex: 1;
       }
       ul {
         display: flex;
         flex-wrap: wrap;
-        gap: 15px;
+
         margin-top: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         list-style: none;
+        justify-self: flex-end;
         li {
           font-family: "SFMono", sans-serif;
           font-size: 12px;
           color: $dark-grey;
           font-weight: 200;
+          margin-right: 20px;
         }
       }
       .blog-card-date {
