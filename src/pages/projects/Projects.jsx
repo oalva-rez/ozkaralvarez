@@ -1,20 +1,26 @@
 import React, { useEffect, useState } from "react";
-import projectsData from "../../../projectsData";
 import FeaturedProject from "../../components/featuredProject/FeaturedProject";
 import SecondaryProject from "../../components/secondaryProject/SecondaryProject";
 import { getProjects } from "../../../ApiLibrary";
+import SyncLoader from "react-spinners/SyncLoader";
 
 function Projects() {
   const [projects, setProjects] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     (async () => {
+      setIsLoading(true);
       const projects = await getProjects();
       setProjects(projects.user.projects);
+      setIsLoading(false);
     })();
   }, []);
-  console.log(projects);
-  return (
+  return isLoading ? (
+    <main className="projects">
+      <SyncLoader color="#64ffda" size={20} cssOverride={{ opacity: 0.5 }} />
+    </main>
+  ) : (
     <main className="projects">
       <h1 className="page-heading">
         <span className="h1--num">02.</span> [...ozkar.
