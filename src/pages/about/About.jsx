@@ -42,11 +42,16 @@ function About() {
             </i>
             <p>- Elizabeth Gilbert</p>
           </blockquote>
-          <h2>My Latest Creative Work</h2>
-          <video controls className="about--vid">
-            <source src={myVid} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <h2>My Latest Work</h2>
+          <div className="about--vid">
+            <iframe
+              src="https://www.youtube.com/embed/d8zbsLwqIVg"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
     </main>

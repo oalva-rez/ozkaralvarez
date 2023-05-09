@@ -32,7 +32,10 @@
   .about--content {
     max-width: 426px;
     .about--vid {
-      max-width: 438px;
+      iframe {
+        width: 100%;
+        height: 240px;
+      }
     }
     blockquote {
       position: relative;

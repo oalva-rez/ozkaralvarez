@@ -19,8 +19,8 @@ function SecondaryProject({ project }) {
       <p className="sec--desc">{project.description}</p>
       <div className="sec--tech">
         {project.techSelect.map((tech, index) => (
-          <span className="sec-tech-name" key={index + tech.name}>
-            {tech.name}
+          <span className="sec-tech-name" key={index + tech.tech_name}>
+            {tech.tech_name}
           </span>
         ))}
       </div>

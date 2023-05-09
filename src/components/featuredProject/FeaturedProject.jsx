@@ -13,8 +13,8 @@ function FeaturedProject({ project }) {
         <p className="p-desc">{project.description}</p>
         <div className="project--tech">
           {project.techSelect.map((tech, index) => (
-            <span className="p-tech-name" key={index + tech.name}>
-              {tech.name}
+            <span className="p-tech-name" key={index + tech.tech_name}>
+              {tech.tech_name}
             </span>
           ))}
         </div>
