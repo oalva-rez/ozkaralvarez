@@ -61,3 +61,23 @@
     }
   }
 }
+
+@include media($mobile-width) {
+  .blogpost {
+    margin-left: $mobile-margin;
+    margin-right: $mobile-margin;
+  }
+}
+@include media(420px) {
+  .blogpost {
+    .blogpost-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 7px;
+    }
+    .dot {
+      display: none;
+    }
+  }
+}

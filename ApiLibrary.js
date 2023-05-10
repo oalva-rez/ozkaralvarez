@@ -1,5 +1,5 @@
-// const HOST = "https://custom-cms.onrender.com";
-const HOST = "http://localhost:3005";
+const HOST = "https://custom-cms.onrender.com";
+// const HOST = "http://localhost:3005";
 const API_KEY = import.meta.env.VITE_API_KEY;
 
 export const getAllData = async () => {

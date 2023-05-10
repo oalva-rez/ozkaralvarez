@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { useNavigate } from "react-router-dom";
 
 import react from "../../assets/tech-icons/reactjs.png";
 import mongodb from "../../assets/tech-icons/mongodb.png";
@@ -10,13 +11,16 @@ import typescript from "../../assets/tech-icons/typescript.png";
 import ozkar from "../../assets/ozkar-light.webp";
 
 function Home() {
+  const navigation = useNavigate();
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
         <title>Ozkar Alvarez | Home</title>
-        <meta name="description" content="Ozkar Alvarez | Home" />
-        <meta name="keywords" content="Ozkar Alvarez | Home" />
+        <meta
+          name="description"
+          content="Explore a web developer's portfolio that showcases custom solutions and expertly crafted websites. With a passion for innovation and collaboration, I bring your digital dreams to life. Let's build something amazing together."
+        />
       </Helmet>
       <main className="home">
         <div className="content-pane">
@@ -29,8 +33,8 @@ function Home() {
             creative abilities into the realm of innovation and engineering.
           </p>
           <div className="home--buttons">
-            <button>About</button>
-            <button>Projects</button>
+            <button onClick={() => navigation("/about")}>About</button>
+            <button onClick={() => navigation("/projects")}>Projects</button>
           </div>
           <div className="hr-line"></div>
           <div className="tech-stack">

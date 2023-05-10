@@ -39,7 +39,11 @@ function Blog() {
       </h1>
       <div className="blog-container">
         {blogs.map((blog, index) => {
-          return <BlogCard blog={blog} key={index + blog.title} />;
+          if (blog.status === "published") {
+            return <BlogCard blog={blog} key={index + blog.title} />;
+          } else {
+            return null;
+          }
         })}
       </div>
     </main>
