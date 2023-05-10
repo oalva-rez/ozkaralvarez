@@ -7,6 +7,11 @@ function Navbar({ isMobile, setIsMenuOpen }) {
     <nav className={isMobile ? "mobile-nav" : null}>
       <ul>
         <li>
+          <Link to="/" onClick={() => setIsMenuOpen(false)}>
+            <span>00.</span> Home
+          </Link>
+        </li>
+        <li>
           <Link to="/about" onClick={() => setIsMenuOpen(false)}>
             <span>01.</span> About
           </Link>

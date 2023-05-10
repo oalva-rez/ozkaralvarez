@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ReactGA from "react-ga";
+
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Projects from "./pages/projects/Projects";
@@ -10,9 +12,13 @@ import Footer from "./components/footer/Footer";
 import Code404 from "./pages/Code404/Code404";
 
 function App() {
+  ReactGA.initialize("G-R9TTYH1C5B");
+
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
     const checkIsMobile = () => {
       const mobileMaxWidth = 769;
       const isMobile = window.innerWidth <= mobileMaxWidth;
