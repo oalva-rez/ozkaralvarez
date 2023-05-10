@@ -1,15 +1,9 @@
 import React from "react";
+import { formatTimestamp } from "../../helpers/formatTimestamp";
 
 function BlogCard({ blog }) {
-  function formatTimestamp(timestamp) {
-    const date = new Date(timestamp);
-    const month = date.toLocaleString("default", { month: "long" });
-    const day = date.getDate();
-    const year = date.getFullYear();
-    return `${month} ${day}, ${year}`;
-  }
   return (
-    <div className="blog-card">
+    <a href={"/blog/" + blog.slug} className="blog-card">
       <div className="img-container">
         <img src={blog.imageUrl} alt={blog.title} />
       </div>
@@ -23,7 +17,7 @@ function BlogCard({ blog }) {
         </ul>
         <p className="blog-card-date">{formatTimestamp(blog.createdAt)}</p>
       </div>
-    </div>
+    </a>
   );
 }
 

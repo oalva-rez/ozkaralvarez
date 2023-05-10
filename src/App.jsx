@@ -6,6 +6,7 @@ import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Projects from "./pages/projects/Projects";
 import Blog from "./pages/blog/Blog";
+import BlogPost from "./pages/blogPost/BlogPost";
 import Contact from "./pages/contact/Contact";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
@@ -37,6 +38,7 @@ function App() {
           <Route exact path="/about" element={<About />} />
           <Route exact path="/projects" element={<Projects />} />
           <Route exact path="/blog" element={<Blog />} />
+          <Route exact path="/blog/:slug" element={<BlogPost />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route path="*" element={<Code404 />} />
         </Routes>

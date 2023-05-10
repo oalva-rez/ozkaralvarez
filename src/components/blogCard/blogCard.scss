@@ -9,6 +9,13 @@
     min-height: 351px;
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    &:hover > .blog-card-content {
+      h2 {
+        color: $cyan;
+        transition: color 0.2s ease-in-out;
+      }
+    }
     .img-container {
       height: 192px;
       width: 100%;
@@ -28,6 +35,8 @@
       h2 {
         font-family: "SFMono", sans-serif;
         font-size: 20px;
+        color: $light-grey;
+        text-decoration: none;
       }
       .meta-description {
         font-weight: 200;
@@ -35,6 +44,8 @@
         color: $dark-grey;
         margin-top: 5px;
         flex: 1;
+        color: $dark-grey;
+        text-decoration: none;
       }
       ul {
         display: flex;

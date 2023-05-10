@@ -21,8 +21,4 @@ import "./components/footer/footer.scss";
 import "./components/secondaryProject/secondaryProject.scss";
 import "./components/blogCard/blogCard.scss";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
