@@ -2,7 +2,7 @@
 @font-face {
   font-family: "SFMono";
   src: local("SFMono"),
-    url(../../src/assets/fonts/SFMono/SF-Mono-Light.otf) format("opentype");
+    url(../../assets/fonts/SFMono/SF-Mono-Light.otf) format("opentype");
   font-weight: 200;
   font-style: normal;
 }
@@ -23,30 +23,28 @@
 @font-face {
   font-family: "SFMono";
   src: local("SFMono"),
-    url(../../src/assets/fonts/SFMono/SF-Mono-Bold.otf) format("opentype");
+    url(../../assets/fonts/SFMono/SF-Mono-Bold.otf) format("opentype");
   font-weight: 500;
   font-style: normal;
 }
-
-// calibre
 // @font-face {
 //   font-family: "calibre";
 //   src: local("calibre"),
-//     url(../../src/assets/fonts/calibre/CalibreThin.otf) format("opentype");
+//     url(../../assets/fonts/calibre/CalibreThin.otf) format("opentype");
 //   font-weight: 100;
 //   font-style: normal;
 // }
 // @font-face {
 //   font-family: "calibre";
 //   src: local("calibre"),
-//     url(../../src/assets/fonts/calibre/CalibreLight.otf) format("opentype");
+//     url(../../assets/fonts/calibre/CalibreLight.otf) format("opentype");
 //   font-weight: 200;
 //   font-style: normal;
 // }
 // @font-face {
 //   font-family: "calibre";
 //   src: local("calibre"),
-//     url(../../src/assets/fonts/calibre/CalibreRegular.otf) format("opentype");
+//     url(../../assets/fonts/calibre/CalibreRegular.otf) format("opentype");
 //   font-weight: 300;
 //   font-style: normal;
 // }

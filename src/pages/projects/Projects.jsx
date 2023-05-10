@@ -9,12 +9,16 @@ function Projects() {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    (async () => {
-      setIsLoading(true);
-      const projects = await getProjects();
-      setProjects(projects.user.projects);
-      setIsLoading(false);
-    })();
+    try {
+      (async () => {
+        setIsLoading(true);
+        const projects = await getProjects();
+        setProjects(projects.projects);
+        setIsLoading(false);
+      })();
+    } catch (error) {
+      console.log(error);
+    }
   }, []);
   return isLoading ? (
     <main className="projects">

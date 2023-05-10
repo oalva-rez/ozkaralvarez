@@ -8,12 +8,16 @@ function Blog() {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    (async () => {
-      setIsLoading(true);
-      const blogs = await getBlogs();
-      setBlogs(blogs.user.blogs);
-      setIsLoading(false);
-    })();
+    try {
+      (async () => {
+        setIsLoading(true);
+        const blogs = await getBlogs();
+        setBlogs(blogs.blogs);
+        setIsLoading(false);
+      })();
+    } catch (error) {
+      console.log(error);
+    }
   }, []);
   return isLoading ? (
     <main className="blog">
