@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Menu from "react-burger-menu/lib/menus/slide";
 import logo from "../../assets/logo-oa.png";
 import { Link } from "react-router-dom";
+import ExampleDoc from "../../alvarez-wd.pdf";
+
 function Navbar({ isMobile, setIsMenuOpen }) {
   return (
     <nav className={isMobile ? "mobile-nav" : null}>
@@ -32,7 +34,9 @@ function Navbar({ isMobile, setIsMenuOpen }) {
           </Link>
         </li>
       </ul>
-      <button>Resume</button>
+      <a href={ExampleDoc} download="Alvarez-Ozkar-Resume" target="_blank">
+        <button>Resume</button>
+      </a>
     </nav>
   );
 }

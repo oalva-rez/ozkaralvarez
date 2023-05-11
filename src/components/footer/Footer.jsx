@@ -6,24 +6,42 @@ function Footer({ isMobile }) {
       <div>
         <ul>
           <li>
-            <a href="http://">
+            <a
+              href="https://github.com/oalva-rez"
+              target="_blank"
+              rel="noopener"
+            >
               <i className="fa-brands fa-github"></i>
             </a>
           </li>
           <li>
-            <a href="http://">
+            <a
+              href="https://codepen.io/oalva-rez"
+              target="_blank"
+              rel="noopener"
+            >
               <i className="fa-brands fa-codepen"></i>
             </a>
           </li>
           <li>
-            <a href="http://">
+            <a
+              href="https://www.linkedin.com/in/ozkar-alvarez-391929259/"
+              target="_blank"
+              rel="noopener"
+            >
               <i className="fa-brands fa-linkedin-in"></i>
             </a>
           </li>
         </ul>
       </div>
       <div>
-        <a href="http://github.com">Source code available</a>
+        <a
+          href="https://github.com/oalva-rez/ozkaralvarez"
+          target="_blank"
+          rel="noopener"
+        >
+          Source code available
+        </a>
       </div>
       <div>
         <a href="mailto: ozkaralvarez10@gmail.com">ozkaralvarez10@gmail.com</a>

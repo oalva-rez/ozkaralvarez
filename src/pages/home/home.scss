@@ -52,11 +52,15 @@ $text-margin: 12px;
       flex-wrap: nowrap;
       display: flex;
     }
-    button {
+    a {
       @include button($cyan, $darker-blue, $dark-blue, 155px, 48px);
       margin-top: 1rem;
       margin-bottom: $text-margin;
       flex-shrink: 1;
+      display: grid;
+      place-content: center;
+      text-decoration: none;
+      font-weight: 200;
       &:first-child {
         margin-right: 1rem;
       }
@@ -195,7 +199,7 @@ $text-margin: 12px;
         width: 100% !important;
         flex: 1 !important;
       }
-      .home--buttons button {
+      .home--buttons a {
         width: 100% !important;
       }
     }

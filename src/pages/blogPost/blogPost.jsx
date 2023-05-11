@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useParams } from "react-router-dom";
 import { getBlogBySlug } from "../../../ApiLibrary";
 import { formatTimestamp } from "../../helpers/formatTimestamp";
@@ -10,6 +10,8 @@ function BlogPost() {
   const [isLoading, setIsLoading] = useState(false);
 
   const { slug } = useParams();
+
+  const contentRef = useRef(null);
 
   useEffect(() => {
     try {
@@ -23,10 +25,21 @@ function BlogPost() {
       console.error(error);
     }
   }, []);
+
+  // useEffect(() => {
+  //   const preElements = contentRef.current.querySelectorAll("pre");
+
+  //   preElements.forEach((pre) => {
+  //     // Modify the content of the <pre> element as needed
+  //     const preInnerHTML = pre.innerHTML;
+  //     pre.innerHTML = `<code class="language-javascript">${preInnerHTML}</code>`;
+  //     console.log(pre.innerHTML);
+  //   });
+  // }, [blogData]);
+
   const metaKeywordsString = blogData?.metaKeywords
     .map((keyword) => keyword.text)
     .join(", ");
-  console.log(metaKeywordsString);
   return (
     <>
       <Helmet>
@@ -61,6 +74,7 @@ function BlogPost() {
           <div
             dangerouslySetInnerHTML={{ __html: blogData?.body }}
             className="blogpost-body"
+            ref={contentRef}
           ></div>
         </main>
       )}

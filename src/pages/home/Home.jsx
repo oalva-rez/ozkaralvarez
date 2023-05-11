@@ -33,12 +33,12 @@ function Home() {
             creative abilities into the realm of innovation and engineering.
           </p>
           <div className="home--buttons">
-            <button onClick={() => navigation("/about")}>About</button>
-            <button onClick={() => navigation("/projects")}>Projects</button>
+            <a href="/about">About</a>
+            <a href="/projects">Projects</a>
           </div>
           <div className="hr-line"></div>
           <div className="tech-stack">
-            <h3>Ozkar's Pick</h3>
+            <h3>Ozkar's Tech Stack</h3>
             <div>
               <ul>
                 <li>
