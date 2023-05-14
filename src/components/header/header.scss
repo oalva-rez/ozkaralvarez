@@ -46,10 +46,13 @@ header {
         gap: 3rem;
         li {
           a {
-            font-size: 20px;
+            font-size: 18px;
             text-align: center;
           }
         }
+      }
+      .resume-href {
+        align-self: center;
       }
     }
 

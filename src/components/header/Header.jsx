@@ -34,7 +34,12 @@ function Navbar({ isMobile, setIsMenuOpen }) {
           </Link>
         </li>
       </ul>
-      <a href={ExampleDoc} download="Alvarez-Ozkar-Resume" target="_blank">
+      <a
+        href={ExampleDoc}
+        download="Alvarez-Ozkar-Resume"
+        target="_blank"
+        className="resume-href"
+      >
         <button>Resume</button>
       </a>
     </nav>
