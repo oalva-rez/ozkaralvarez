@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
+import { ToastContainer, toast } from "react-toastify";
 
 function Contact() {
   const [inputData, setInputData] = useState({
@@ -15,6 +16,40 @@ function Contact() {
       [e.target.name]: e.target.value,
     });
   };
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const id = toast.loading("Sending message to Ozkar...");
+
+    const response = await fetch(
+      "https://portfolio-emailer.netlify.app/.netlify/functions/api/contact",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(inputData),
+      }
+    );
+
+    if (response.status === 200) {
+      setInputData({ name: "", email: "", message: "", subject: "" });
+      toast.update(id, {
+        render: "Message sent beautifully.",
+        type: "success",
+        isLoading: false,
+        autoClose: 3000,
+      });
+    } else {
+      toast.update(id, {
+        render:
+          "Oh no... Something went terribly wrong. Please use other form of contact.",
+        type: "error",
+        isLoading: false,
+        autoClose: 3000,
+      });
+    }
+  }
 
   return (
     <>
@@ -38,7 +73,7 @@ function Contact() {
             My inbox is always open. Use the form below for any ideas,
             questions, pizza party? Look forward to hearing from you.
           </p>
-          <form>
+          <form onSubmit={handleSubmit}>
             <input
               type="text"
               placeholder="Name"
@@ -46,6 +81,7 @@ function Contact() {
               name="name"
               onChange={handleChange}
               value={inputData.name}
+              required
             />
             <input
               type="text"
@@ -54,6 +90,7 @@ function Contact() {
               name="email"
               onChange={handleChange}
               value={inputData.email}
+              required
             />
             <input
               type="text"
@@ -62,6 +99,7 @@ function Contact() {
               name="subject"
               onChange={handleChange}
               value={inputData.subject}
+              required
             />
             <textarea
               placeholder="Message"
@@ -69,10 +107,16 @@ function Contact() {
               name="message"
               onChange={handleChange}
               value={inputData.message}
+              required
             ></textarea>
-            <button>Submit</button>
+            <input type="submit" value="Submit" />
           </form>
         </div>
+        <ToastContainer
+          position="top-right"
+          hideProgressBar={true}
+          theme="dark"
+        />
       </main>
     </>
   );

@@ -3,10 +3,15 @@ import React from "react";
 function FeaturedProject({ project }) {
   return (
     <div className="project">
-      <div className="project--image">
+      <a
+        href={project.liveUrl === "n/a" ? project.githubUrl : project.liveUrl}
+        className="project--image"
+        target="_blank"
+        rel="noreferrer"
+      >
         <img src={project.imageUrl} alt={project.title} />
         <div className="image-overlay"></div>
-      </div>
+      </a>
       <div className="project--content">
         <p className="p-fp">Featured Project</p>
         <h2 className="p-title">{project.title}</h2>
@@ -24,7 +29,7 @@ function FeaturedProject({ project }) {
             <a href={project.githubUrl} target="_blank" rel="noreferrer">
               <i className="fab fa-github"></i>
             </a>
-            {project.liveUrl ? (
+            {project.liveUrl !== "n/a" ? (
               <a href={project.liveUrl} target="_blank" rel="noreferrer">
                 <i className="fa-solid fa-arrow-up-right-from-square"></i>
               </a>

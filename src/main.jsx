@@ -21,4 +21,7 @@ import "./components/footer/footer.scss";
 import "./components/secondaryProject/secondaryProject.scss";
 import "./components/blogCard/blogCard.scss";
 
+// toast styles
+import "react-toastify/dist/ReactToastify.css";
+
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
