@@ -26,9 +26,11 @@ function FeaturedProject({ project }) {
         <div className="project--info">
           {project.wip ? <p className="p-wip">Work In Progress</p> : null}
           <div className="project--links">
-            <a href={project.githubUrl} target="_blank" rel="noreferrer">
-              <i className="fab fa-github"></i>
-            </a>
+            {project.githubUrl !== "n/a" ? (
+              <a href={project.githubUrl} target="_blank" rel="noreferrer">
+                <i className="fab fa-github"></i>
+              </a>
+            ) : null}
             {project.liveUrl !== "n/a" ? (
               <a href={project.liveUrl} target="_blank" rel="noreferrer">
                 <i className="fa-solid fa-arrow-up-right-from-square"></i>

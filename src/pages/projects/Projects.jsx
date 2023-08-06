@@ -14,7 +14,11 @@ function Projects() {
       (async () => {
         setIsLoading(true);
         const projects = await getProjects();
-        setProjects(projects.projects);
+        const sortedProjects = projects.projects.sort((a, b) => {
+          return a.title === "TrayectoAI" ? -1 : 1;
+        });
+        setProjects(sortedProjects);
+
         setIsLoading(false);
       })();
     } catch (error) {

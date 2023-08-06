@@ -63,7 +63,7 @@ function Contact() {
       </Helmet>
       <main className="contact">
         <h1 className="page-heading">
-          <span className="h1--num">03.</span> ozkar.
+          <span className="h1--num">04.</span> ozkar.
           <span className="h1--text">collaborateWith</span>(
           <span className="you-text">you</span>)
         </h1>

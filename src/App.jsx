@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ReactGA from "react-ga";
 
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
@@ -11,15 +10,21 @@ import Contact from "./pages/contact/Contact";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Code404 from "./pages/Code404/Code404";
+import ReactGA from "react-ga4";
+
+// ReactGA.initialize("G-4B972HDZT3");
+
+// const location = window.location.pathname + window.location.search;
+// ReactGA.send({
+//   hitType: "pageview",
+//   page: location,
+//   title: location,
+// });
 
 function App() {
-  ReactGA.initialize("G-R9TTYH1C5B");
-
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-
     const checkIsMobile = () => {
       const mobileMaxWidth = 769;
       const isMobile = window.innerWidth <= mobileMaxWidth;
@@ -29,6 +34,7 @@ function App() {
     window.addEventListener("resize", checkIsMobile);
     return () => window.removeEventListener("resize", checkIsMobile);
   }, []);
+
   return (
     <div className="App">
       <BrowserRouter>

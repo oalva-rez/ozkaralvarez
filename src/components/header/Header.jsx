@@ -33,6 +33,17 @@ function Navbar({ isMobile, setIsMenuOpen }) {
             <span>04.</span> Contact
           </Link>
         </li>
+        <li>
+          <a
+            href="https://trayectoai.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <span>05.</span> TrayectoAI
+            <i className="fa-solid fa-arrow-up-right-from-square ext-link"></i>
+          </a>
+        </li>
       </ul>
       <a
         href={ExampleDoc}
@@ -103,7 +114,7 @@ function Header({ isMobile }) {
           <Navbar isMobile={isMobile} setIsMenuOpen={setIsMenuOpen} />
         </Menu>
       ) : (
-        <Navbar />
+        <Navbar setIsMenuOpen={setIsMenuOpen} />
       )}
     </header>
   );
