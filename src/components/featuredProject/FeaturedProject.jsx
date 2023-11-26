@@ -46,7 +46,7 @@ function FeaturedProject({ project }) {
                         <p className="p-wip">Work In Progress</p>
                     ) : null}
                     <div className="project--links">
-                        {project.githubUrl !== "n/a" ? (
+                        {project.githubUrl ? (
                             <a
                                 href={project.githubUrl}
                                 target="_blank"

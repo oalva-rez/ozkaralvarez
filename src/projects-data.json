@@ -1,0 +1,571 @@
+[
+    {
+        "projectId": "x26ULptD5zSQQ4ULnYPMh",
+        "title": "TrayectoAI",
+        "description": "An innovative, AI-powered career development app. It offers features such as a comprehensive Job Center for job hunting, an AI-based mock interview room for practice, and a smart Resume Generator for crafting standout resumes.",
+        "githubUrl": false,
+        "liveUrl": "https://trayectoai10.web.app/login",
+        "featured": true,
+        "wip": true,
+        "techSelect": [
+            {
+                "id": 95,
+                "file_name": "typescript.png",
+                "tech_name": "TypeScript"
+            },
+            {
+                "id": 72,
+                "file_name": "reactjs.png",
+                "tech_name": "React.js"
+            },
+            {
+                "id": 40,
+                "file_name": "sass.png",
+                "tech_name": "Sass"
+            },
+            {
+                "id": 111,
+                "file_name": "nodejs.png",
+                "tech_name": "Node"
+            },
+            {
+                "id": 103,
+                "file_name": "mongodb.png",
+                "tech_name": "MongoDB"
+            }
+        ],
+        "imageName": "f3c3abb7812e90f80bd97e25693b70eb23c8379215a9d1c08ab848491e42af74",
+        "_id": "64c44d703ae19b0e100a6e35",
+        "imageUrl": "./trayecto.png"
+    },
+    {
+        "projectId": "DBRCHZ9h2Zzcy_yfDvYOv",
+        "title": "Portfolio CMS",
+        "description": "A headless CMS platform allowing users to update their portfolio content through a dashboard UI using generated API keys and user API endpoints.",
+        "githubUrl": "https://github.com/oalva-rez/custom-cms/tree/master",
+        "liveUrl": "n/a",
+        "featured": true,
+        "wip": false,
+        "techSelect": [
+            {
+                "id": 98,
+                "file_name": "css.png",
+                "tech_name": "Css"
+            },
+            {
+                "id": 72,
+                "file_name": "reactjs.png",
+                "tech_name": "React"
+            },
+            {
+                "id": 111,
+                "file_name": "nodejs.png",
+                "tech_name": "Node"
+            },
+            {
+                "id": 103,
+                "file_name": "mongodb.png",
+                "tech_name": "MongoDB"
+            },
+            {
+                "id": 41,
+                "file_name": "aws.png",
+                "tech_name": "Aws"
+            }
+        ],
+        "imageName": "bb8be50f491a41df4565fbb6982e1d88e6cfb56dae4bb0276ab669fcd65d2b21",
+        "_id": "64595b72f008a538c2df6290",
+        "imageUrl": "./custom-cms.webp"
+    },
+    {
+        "projectId": "UTqn28f6R1p769DR8PnqU",
+        "title": "Audiophile",
+        "description": "A fully responsive, e-commerce website for audio equipment. Built with React, and TypeScript. Uses React Router v6 for routing and URL params for product ID.",
+        "githubUrl": "https://github.com/oalva-rez/audiophile",
+        "liveUrl": "https://audiophile-10.web.app/",
+        "featured": false,
+        "wip": true,
+        "techSelect": [
+            {
+                "id": 98,
+                "file_name": "css.png",
+                "tech_name": "Css"
+            },
+            {
+                "id": 95,
+                "file_name": "typescript.png",
+                "tech_name": "TypeScript"
+            },
+            {
+                "id": 72,
+                "file_name": "react.png",
+                "tech_name": "React"
+            }
+        ],
+        "imageName": "f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d",
+        "_id": "64595bbff008a538c2df6298",
+        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=bf94c5eed996727d34d470f0b2e78858b5dd18330a5a7ba4cf91dbf091714613&X-Amz-SignedHeaders=host&x-id=GetObject"
+    },
+    {
+        "projectId": "UTqn28f6R1p769DRdsw8PnqU",
+        "title": "Find My Professor",
+        "description": "This directory features an advanced keyword search field, enabling students to easily find detailed information about professors and their courses.",
+        "professional": true,
+        "githubUrl": false,
+        "liveUrl": "https://www.sdmesa.edu/find-my-professor/index.html",
+        "featured": false,
+        "wip": false,
+        "techSelect": [
+            {
+                "id": 98,
+                "file_name": "css.png",
+                "tech_name": "React"
+            },
+            {
+                "id": 95,
+                "file_name": "typescript.png",
+                "tech_name": "Css"
+            },
+            {
+                "id": 72,
+                "file_name": "react.png",
+                "tech_name": "TypeScript"
+            }
+        ],
+        "imageName": "f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d",
+        "_id": "64595bbff008a538c2df6298",
+        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=bf94c5eed996727d34d470f0b2e78858b5dd18330a5a7ba4cf91dbf091714613&X-Amz-SignedHeaders=host&x-id=GetObject"
+    },
+    {
+        "projectId": "UTqn28f6R1p769DRdsw8PnqU",
+        "title": "Mesa College Open Courses",
+        "description": "A course listing page for Mesa College, featuring robust filtering and keyword search capabilities. Included functionalities for downloading course lists in Excel format and generating direct links for specific courses.",
+        "professional": true,
+        "githubUrl": false,
+        "liveUrl": "https://www.sdmesa.edu/academics/v2/courses/open-courses-spring.html",
+        "featured": false,
+        "wip": false,
+        "techSelect": [
+            {
+                "id": 98,
+                "file_name": "css.png",
+                "tech_name": "Html"
+            },
+            {
+                "id": 95,
+                "file_name": "typescript.png",
+                "tech_name": "Css"
+            },
+            {
+                "id": 72,
+                "file_name": "react.png",
+                "tech_name": "JavaScript"
+            }
+        ],
+        "imageName": "f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d",
+        "_id": "64595bbff008a538c2df6298",
+        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=bf94c5eed996727d34d470f0b2e78858b5dd18330a5a7ba4cf91dbf091714613&X-Amz-SignedHeaders=host&x-id=GetObject"
+    },
+    {
+        "projectId": "UTqn28f6R1p769DRdsw8PnqU",
+        "title": "Excellent-Ed",
+        "description": "Developed a dynamic and interactive website for Excellent-Ed using WordPress and PHP. The site features a custom-built online assessment test, designed to engage users and generate valuable leads for the business.",
+        "professional": true,
+        "githubUrl": false,
+        "liveUrl": "https://excellent-ed.org/",
+        "featured": false,
+        "wip": false,
+        "techSelect": [
+            {
+                "id": 98,
+                "file_name": "css.png",
+                "tech_name": "Html"
+            },
+            {
+                "id": 95,
+                "file_name": "typescript.png",
+                "tech_name": "Css"
+            },
+            {
+                "id": 72,
+                "file_name": "react.png",
+                "tech_name": "JavaScript"
+            },
+            {
+                "id": 111,
+                "file_name": "nodejs.png",
+                "tech_name": "WordPress"
+            },
+            {
+                "id": 111,
+                "file_name": "nodejs.png",
+                "tech_name": "Php"
+            }
+        ],
+        "imageName": "f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d",
+        "_id": "64595bbff008a538c2df6298",
+        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=bf94c5eed996727d34d470f0b2e78858b5dd18330a5a7ba4cf91dbf091714613&X-Amz-SignedHeaders=host&x-id=GetObject"
+    },
+    {
+        "projectId": "UTqn28f6R1p769DRdsw8PnqU",
+        "title": "The Fitness Forge",
+        "description": "This multifaceted site includes a blog, an affiliate links section for revenue generation, and a custom online assessment test to generate leads. Expertly integrated elements to focus on both functionality and revenue optimization.",
+        "professional": true,
+        "githubUrl": false,
+        "liveUrl": "https://www.thefitnessforgeco.com/",
+        "featured": false,
+        "wip": false,
+        "techSelect": [
+            {
+                "id": 98,
+                "file_name": "css.png",
+                "tech_name": "Html"
+            },
+            {
+                "id": 95,
+                "file_name": "typescript.png",
+                "tech_name": "Css"
+            },
+            {
+                "id": 72,
+                "file_name": "react.png",
+                "tech_name": "JavaScript"
+            },
+            {
+                "id": 111,
+                "file_name": "nodejs.png",
+                "tech_name": "WordPress"
+            },
+            {
+                "id": 111,
+                "file_name": "nodejs.png",
+                "tech_name": "Php"
+            }
+        ],
+        "imageName": "f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d",
+        "_id": "64595bbff008a538c2df6298",
+        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=bf94c5eed996727d34d470f0b2e78858b5dd18330a5a7ba4cf91dbf091714613&X-Amz-SignedHeaders=host&x-id=GetObject"
+    },
+    {
+        "projectId": "UTqn28f6R1p769DRdsw8PnqU",
+        "title": "Chanelle Perfumes",
+        "description": "Developed a sophisticated and user-friendly e-commerce website for Chanelle Perfumes using WordPress. This project involved creating a seamless online shopping experience, complete with product catalogs, shopping cart functionality, and secure payment systems.",
+        "professional": true,
+        "githubUrl": false,
+        "liveUrl": "https://chanelleperfumes.com/",
+        "featured": false,
+        "wip": false,
+        "techSelect": [
+            {
+                "id": 98,
+                "file_name": "css.png",
+                "tech_name": "Html"
+            },
+            {
+                "id": 95,
+                "file_name": "typescript.png",
+                "tech_name": "Css"
+            },
+            {
+                "id": 72,
+                "file_name": "react.png",
+                "tech_name": "JavaScript"
+            },
+            {
+                "id": 111,
+                "file_name": "nodejs.png",
+                "tech_name": "WordPress"
+            },
+            {
+                "id": 111,
+                "file_name": "nodejs.png",
+                "tech_name": "Php"
+            }
+        ],
+        "imageName": "f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d",
+        "_id": "64595bbff008a538c2df6298",
+        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=bf94c5eed996727d34d470f0b2e78858b5dd18330a5a7ba4cf91dbf091714613&X-Amz-SignedHeaders=host&x-id=GetObject"
+    },
+    {
+        "projectId": "UTqn28f6R1p769DRdsw8PnqU",
+        "title": "Pas De Deux Workshop & Coaching",
+        "description": "Crafted an interactive and efficient website for Pas De Deux Workshop, utilizing WordPress. The site features advanced online booking and payment systems, allowing clients to effortlessly schedule and pay for workshops.",
+        "professional": true,
+        "githubUrl": false,
+        "liveUrl": "http://jwd.fih.mybluehost.me/",
+        "featured": false,
+        "wip": false,
+        "techSelect": [
+            {
+                "id": 98,
+                "file_name": "css.png",
+                "tech_name": "Html"
+            },
+            {
+                "id": 95,
+                "file_name": "typescript.png",
+                "tech_name": "Css"
+            },
+            {
+                "id": 72,
+                "file_name": "react.png",
+                "tech_name": "JavaScript"
+            },
+            {
+                "id": 111,
+                "file_name": "nodejs.png",
+                "tech_name": "WordPress"
+            },
+            {
+                "id": 111,
+                "file_name": "nodejs.png",
+                "tech_name": "Php"
+            }
+        ],
+        "imageName": "f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d",
+        "_id": "64595bbff008a538c2df6298",
+        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=bf94c5eed996727d34d470f0b2e78858b5dd18330a5a7ba4cf91dbf091714613&X-Amz-SignedHeaders=host&x-id=GetObject"
+    },
+    {
+        "projectId": "1SyVT1rXocOPANVulSbYj",
+        "title": "Karoz",
+        "description": "A Kanban project management app allowing users to create and manage project flows. Built with React, ContextAPI for state management, and Firebase.",
+        "githubUrl": "https://github.com/oalva-rez/karoz/tree/firebase",
+        "liveUrl": "https://karoz-3c7bb.web.app/login",
+        "featured": true,
+        "wip": false,
+        "techSelect": [
+            {
+                "id": 98,
+                "file_name": "css.png",
+                "tech_name": "Css"
+            },
+            {
+                "id": 72,
+                "file_name": "reactjs.png",
+                "tech_name": "React"
+            },
+            {
+                "id": 36,
+                "file_name": "firebase.png",
+                "tech_name": "Firebase"
+            }
+        ],
+        "imageName": "47cd685bd59d2ff6c1967d81f088a670bfac6a391324811a1584820edd9246b5",
+        "_id": "64595bf0f008a538c2df62a3",
+        "imageUrl": "./karoz-img.webp"
+    },
+    {
+        "projectId": "LD1pLyoyKRiOjTvDJ2ikE",
+        "title": "Shopping Cart",
+        "description": "Mock store website built with React. Implements TDD practices using Jest and React Testing Library. Uses React Router v6 for routing and URL params for product ID.",
+        "githubUrl": "https://github.com/oalva-rez/shopping-cart",
+        "liveUrl": "https://shopping-cart123.web.app/",
+        "featured": false,
+        "wip": false,
+        "techSelect": [
+            {
+                "id": 98,
+                "file_name": "css.png",
+                "tech_name": "Css"
+            },
+            {
+                "id": 72,
+                "file_name": "reactjs.png",
+                "tech_name": "React"
+            },
+            {
+                "id": 97,
+                "file_name": "jest.png",
+                "tech_name": "Jest"
+            }
+        ],
+        "imageName": "5a1db7191f780d96210791164b1e9f17ba8a05ed2b4673639828f14d9be4a307",
+        "_id": "64595c1ef008a538c2df62b1",
+        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/5a1db7191f780d96210791164b1e9f17ba8a05ed2b4673639828f14d9be4a307?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=f3400bb117bfb11d944191762037a6aaf0011c3048206da8a3f5dc43fb311c2d&X-Amz-SignedHeaders=host&x-id=GetObject"
+    },
+    {
+        "projectId": "XA2Geu8mN1-aUTYDsakr4",
+        "title": "Restaurant Page",
+        "description": "Final project for UX course called Creating User-centered Content. Built with vanilla JavaScript and webpack for bundling. Simulated a client proposal for a mobile responsive restaurant page.",
+        "githubUrl": "https://github.com/oalva-rez/restaurant-page",
+        "liveUrl": "https://oalva-rez.github.io/restaurant-page/",
+        "featured": false,
+        "wip": false,
+        "techSelect": [
+            {
+                "id": 105,
+                "file_name": "html5.png",
+                "tech_name": "Html5"
+            },
+            {
+                "id": 98,
+                "file_name": "css.png",
+                "tech_name": "Css"
+            },
+            {
+                "id": 44,
+                "file_name": "js.png",
+                "tech_name": "JavaScript"
+            },
+            {
+                "id": 47,
+                "file_name": "webpack.png",
+                "tech_name": "Webpack"
+            }
+        ],
+        "imageName": "46b960df086070567b6885b90c67f7c0b8012b7d0ead5c224ff6d0a6de933881",
+        "_id": "64595c69f008a538c2df62d2",
+        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/46b960df086070567b6885b90c67f7c0b8012b7d0ead5c224ff6d0a6de933881?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=6fd9c2579f861c6314f1c78a0f451742a4e6dc32959a63a623bbc1702421aa20&X-Amz-SignedHeaders=host&x-id=GetObject"
+    },
+    {
+        "projectId": "Xdihn19F8aYM68QBJ4-9Z",
+        "title": "Lazy Reader",
+        "description": "A website that generates a summarized version of the top posts from Reddit. Built with React for the front-end, utilizing a restful API built with Node and Express with a MongoDB database.",
+        "githubUrl": "https://github.com/oalva-rez/LazyReader-Frontend",
+        "liveUrl": "https://lazyreader456.web.app/",
+        "featured": false,
+        "wip": false,
+        "techSelect": [
+            {
+                "id": 98,
+                "file_name": "css.png",
+                "tech_name": "Css"
+            },
+            {
+                "id": 72,
+                "file_name": "reactjs.png",
+                "tech_name": "React"
+            },
+            {
+                "id": 111,
+                "file_name": "nodejs.png",
+                "tech_name": "Node"
+            },
+            {
+                "id": 103,
+                "file_name": "mongodb.png",
+                "tech_name": "MongoDB"
+            }
+        ],
+        "imageName": "a0d90799a52d48da06dddfca226271a9bb78318543ab5e532388ea8ccfc554de",
+        "_id": "64595c95f008a538c2df62e6",
+        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/a0d90799a52d48da06dddfca226271a9bb78318543ab5e532388ea8ccfc554de?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=7fa6f006c14d6977e1746d0a7c2683d87b17d0c54d3ff9b33ddab9dc61c1a74d&X-Amz-SignedHeaders=host&x-id=GetObject"
+    },
+    {
+        "projectId": "fE7chAeT69AixjAu2OWpB",
+        "title": "CV Generator",
+        "description": "A simple CV generator built with React. Users can add their information and download a PDF version of their CV.",
+        "githubUrl": "https://github.com/oalva-rez/cv-generator",
+        "liveUrl": "https://oalva-rez.github.io/cv-generator/",
+        "featured": false,
+        "wip": false,
+        "techSelect": [
+            {
+                "id": 98,
+                "file_name": "css.png",
+                "tech_name": "Css"
+            },
+            {
+                "id": 72,
+                "file_name": "reactjs.png",
+                "tech_name": "React"
+            }
+        ],
+        "imageName": "2e7ca94e379be11bb7eb5282cc83ae597b84a4b443a9ca64330ca3934db0a0eb",
+        "_id": "64595ce4f008a538c2df62fd",
+        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/2e7ca94e379be11bb7eb5282cc83ae597b84a4b443a9ca64330ca3934db0a0eb?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=f80195537974b4951eb39ef6effdda86ed434f059cdc35846e2a24814ed59a05&X-Amz-SignedHeaders=host&x-id=GetObject"
+    },
+    {
+        "projectId": "fSO8fEIquXcCICXnL2lHc",
+        "title": "Premy",
+        "description": "A Wordle-like guessing game for the English Premier League. Built with vanilla JavaScript and webpack for bundling. Async/await syntax, and fetch for calling the Football Data API.",
+        "githubUrl": "https://github.com/oalva-rez/premy",
+        "liveUrl": "https://oalva-rez.github.io/premy/",
+        "featured": false,
+        "wip": false,
+        "techSelect": [
+            {
+                "id": 105,
+                "file_name": "html5.png",
+                "tech_name": "Html5"
+            },
+            {
+                "id": 98,
+                "file_name": "css.png",
+                "tech_name": "Css"
+            },
+            {
+                "id": 44,
+                "file_name": "js.png",
+                "tech_name": "JavaScript"
+            },
+            {
+                "id": 47,
+                "file_name": "webpack.png",
+                "tech_name": "Webpack"
+            },
+            {
+                "id": 35,
+                "file_name": "jquery.png",
+                "tech_name": "Jquery"
+            }
+        ],
+        "imageName": "1a1d0c83f7671284bf34d2bd4b32ea3f5b65fc92dbc9e43b8ec66b5b68aa2ccd",
+        "_id": "64595d15f008a538c2df6317",
+        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/1a1d0c83f7671284bf34d2bd4b32ea3f5b65fc92dbc9e43b8ec66b5b68aa2ccd?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=f11a649d766919028fbf3aa1ccbbd6d0a073456b46ef4fe91b1cba1b8c38ffb7&X-Amz-SignedHeaders=host&x-id=GetObject"
+    },
+    {
+        "projectId": "BAoJjqwuQO8H-TuMq0zPT",
+        "title": "Quiz App",
+        "description": "A quiz app built with React. The app uses the Open Trivia Database API.",
+        "githubUrl": "https://github.com/oalva-rez/quiz-app",
+        "liveUrl": "https://oalva-rez.github.io/quiz-app/",
+        "featured": false,
+        "wip": false,
+        "techSelect": [
+            {
+                "id": 98,
+                "file_name": "css.png",
+                "tech_name": "Css"
+            },
+            {
+                "id": 72,
+                "file_name": "reactjs.png",
+                "tech_name": "React"
+            }
+        ],
+        "imageName": "2e02b4e70d9633fde55c85039d6723eb2ea35c5740880dc0dfdca8fcd4e9ff9e",
+        "_id": "64595d39f008a538c2df6334",
+        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/2e02b4e70d9633fde55c85039d6723eb2ea35c5740880dc0dfdca8fcd4e9ff9e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=8259313e163e06452332f00b64ad5b190b0dc4e37956883f75563fb34632016b&X-Amz-SignedHeaders=host&x-id=GetObject"
+    },
+    {
+        "projectId": "nwj5MncpbKTr5-X7BamTN",
+        "title": "Personal Portfolio",
+        "description": "I take great pride in my personal portfolio, as it represents the culmination of countless hours of hard work and dedication. With every project I add to the portfolio, I am constantly pushing myself to improve my skills and create more innovative and effective solutions.",
+        "githubUrl": "https://github.com/oalva-rez/ozkaralvarez",
+        "liveUrl": "n/a",
+        "featured": false,
+        "wip": false,
+        "techSelect": [
+            {
+                "id": 40,
+                "file_name": "sass.png",
+                "tech_name": "Sass"
+            },
+            {
+                "id": 72,
+                "file_name": "reactjs.png",
+                "tech_name": "React"
+            },
+            {
+                "id": 111,
+                "file_name": "nodejs.png",
+                "tech_name": "Node"
+            }
+        ],
+        "imageName": "4f7f68200cfde7380903325669936b07c9e3f4b4b63ff4726ee0ec96221e30c0",
+        "_id": "646133e0831b24df4599f023",
+        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/4f7f68200cfde7380903325669936b07c9e3f4b4b63ff4726ee0ec96221e30c0?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=a7c11f9141d4c3b4f4ba5f566ee1a2e73aeb129ac74eee242c6369393c94dc37&X-Amz-SignedHeaders=host&x-id=GetObject"
+    }
+]

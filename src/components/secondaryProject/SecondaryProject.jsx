@@ -17,13 +17,15 @@ function SecondaryProject({ project }) {
             <div className="sec--heading">
                 <h3>{project.title}</h3>
                 <div className="sec--links">
-                    <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <i className="fab fa-github"></i>
-                    </a>
+                    {project.githubUrl ? (
+                        <a
+                            href={project.githubUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <i className="fab fa-github"></i>
+                        </a>
+                    ) : null}
                     {project.liveUrl ? (
                         <a
                             href={project.liveUrl}

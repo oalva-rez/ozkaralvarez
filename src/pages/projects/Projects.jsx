@@ -5,6 +5,7 @@ import { getProjects } from "../../../ApiLibrary";
 import SyncLoader from "react-spinners/SyncLoader";
 import { Helmet } from "react-helmet";
 import ReactGA from "react-ga4";
+import projectData from "../../projects-data.json";
 
 function Projects() {
     const [projects, setProjects] = useState([]);
@@ -14,8 +15,11 @@ function Projects() {
         try {
             (async () => {
                 setIsLoading(true);
-                const projects = await getProjects();
-                const sortedProjects = projects.projects.sort((a, b) => {
+                // const projects = await getProjects();
+                // const sortedProjects = projects.projects.sort((a, b) => {
+                //     return a.title === "TrayectoAI" ? -1 : 1;
+                // });
+                const sortedProjects = projectData.sort((a, b) => {
                     return a.title === "TrayectoAI" ? -1 : 1;
                 });
                 setProjects(sortedProjects);
@@ -67,10 +71,25 @@ function Projects() {
                     })}
                 </div>
                 <div className="noteworthy--projects">
+                    <h2>Professional Projects</h2>
+                    <div className="secondary--container">
+                        {projects.map((project, index) => {
+                            if (!project.featured && project.professional) {
+                                return (
+                                    <SecondaryProject
+                                        project={project}
+                                        key={index + project.title}
+                                    />
+                                );
+                            }
+                        })}
+                    </div>
+                </div>
+                <div className="noteworthy--projects">
                     <h2>Other Noteworthy Projects</h2>
                     <div className="secondary--container">
                         {projects.map((project, index) => {
-                            if (!project.featured) {
+                            if (!project.featured && !project.professional) {
                                 return (
                                     <SecondaryProject
                                         project={project}
