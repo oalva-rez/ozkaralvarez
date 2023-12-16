@@ -3,97 +3,98 @@
 @import "../../styles/mixins";
 
 .contact {
-  @include page-layout();
-  max-width: 1000px;
-  justify-self: center;
-  .contact-container {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    width: 60%;
-    flex: 1;
-    justify-content: center;
-    margin-top: 20px;
-    h2 {
-      font-size: 34px;
-      font-weight: 600;
-      margin-bottom: 0px;
-      position: relative;
-      text-align: center;
-    }
-    p {
-      font-size: 24px;
-      font-weight: 300;
-      margin-bottom: 0px;
-      text-align: center;
-      color: $dark-grey;
-      margin-top: 10px;
-      font-family: "Calibre", sans-serif;
-    }
-    form {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      grid-template-rows: 50px 50px 160px 50px;
-      grid-gap: 8px;
-      margin-top: 20px;
-      & > *:not(input[type="submit"]) {
-        border-radius: 4px;
-        border: none;
-        background-color: #344057;
-        color: $dark-grey;
-        padding: 10px;
-        font-size: 14px;
-        font-weight: 200;
-      }
-    }
+    @include page-layout();
+    max-width: 1000px;
+    justify-self: center;
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 60%;
+        flex: 1;
+        justify-content: center;
+        margin-top: 20px;
+        h2 {
+            font-size: 34px;
+            font-weight: 600;
+            margin-bottom: 0px;
+            position: relative;
+            text-align: center;
+        }
+        p {
+            font-size: 24px;
+            font-weight: 300;
+            margin-bottom: 0px;
+            text-align: center;
+            color: $dark-grey;
+            margin-top: 10px;
+            font-family: "Calibre", sans-serif;
+        }
+        form {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-rows: 50px 50px 160px 50px;
+            grid-gap: 8px;
+            margin-top: 20px;
+            & > *:not(input[type="submit"]) {
+                border-radius: 4px;
+                border: none;
+                background-color: #344057;
+                color: $dark-grey;
+                padding: 10px;
+                font-size: 14px;
+                font-weight: 200;
+                resize: none;
+            }
+        }
 
-    .contact--subject {
-      grid-column: 1 / 3;
-      grid-row: 2 / 3;
-    }
-    .contact--message {
-      grid-column: 1 / 3;
-      grid-row: 3 / 4;
-    }
-    input[type="submit"] {
-      @include button($cyan, $darker-blue, $dark-blue, 206px, 40px);
-      font-weight: 200;
+        .contact--subject {
+            grid-column: 1 / 3;
+            grid-row: 2 / 3;
+        }
+        .contact--message {
+            grid-column: 1 / 3;
+            grid-row: 3 / 4;
+        }
+        input[type="submit"] {
+            @include button($cyan, $darker-blue, $dark-blue, 206px, 40px);
+            font-weight: 200;
 
-      grid-column: 1 / 3;
-      grid-row: 4 / 5;
-      justify-self: center;
+            grid-column: 1 / 3;
+            grid-row: 4 / 5;
+            justify-self: center;
+        }
     }
-  }
 }
 @include media(1246px) {
-  .contact {
-    .contact-container {
-      width: 100%;
-      padding: 0px 40px;
+    .contact {
+        .contact-container {
+            width: 100%;
+            padding: 0px 40px;
+        }
     }
-  }
 }
 @include media(1024px) {
-  .contact {
-    .page-heading::after {
-      display: none;
+    .contact {
+        .page-heading::after {
+            display: none;
+        }
+        .contact-container {
+            padding: 0px 0px;
+        }
     }
-    .contact-container {
-      padding: 0px 0px;
-    }
-  }
 }
 @include media($mobile-width) {
-  .contact {
-    margin-left: $mobile-margin;
-    margin-right: $mobile-margin;
-  }
+    .contact {
+        margin-left: $mobile-margin;
+        margin-right: $mobile-margin;
+    }
 }
 
 @include media(503px) {
-  .contact {
-    .page-heading {
-      font-size: 4.5vw !important;
+    .contact {
+        .page-heading {
+            font-size: 4.5vw !important;
+        }
     }
-  }
 }

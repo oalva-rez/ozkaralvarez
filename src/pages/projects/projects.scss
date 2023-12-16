@@ -3,8 +3,15 @@
 @import "../../styles/mixins";
 
 .projects {
-  @include page-layout();
-  max-width: 1000px;
-  align-self: center;
-  justify-self: center;
+    @include page-layout();
+    max-width: 1000px;
+    align-self: center;
+    justify-self: center;
+}
+
+.carousel-item {
+    img {
+        border-top-right-radius: 0.375rem;
+        border-top-left-radius: 0.375rem;
+    }
 }

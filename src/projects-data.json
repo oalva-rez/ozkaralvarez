@@ -36,7 +36,15 @@
         ],
         "imageName": "f3c3abb7812e90f80bd97e25693b70eb23c8379215a9d1c08ab848491e42af74",
         "_id": "64c44d703ae19b0e100a6e35",
-        "imageUrl": "./trayecto.png"
+        "imageUrl": [
+            "./trayecto-1.webp",
+            "./trayecto-2.webp",
+            "./trayecto-3.webp",
+            "./trayecto-4.webp",
+            "./trayecto-5.webp",
+            "./trayecto-6.webp",
+            "./trayecto-7.webp"
+        ]
     },
     {
         "projectId": "DBRCHZ9h2Zzcy_yfDvYOv",
@@ -75,7 +83,13 @@
         ],
         "imageName": "bb8be50f491a41df4565fbb6982e1d88e6cfb56dae4bb0276ab669fcd65d2b21",
         "_id": "64595b72f008a538c2df6290",
-        "imageUrl": "./custom-cms.webp"
+        "imageUrl": [
+            "./cms-1.webp",
+            "./cms-2.webp",
+            "./cms-3.webp",
+            "./cms-4.webp",
+            "./cms-5.webp"
+        ]
     },
     {
         "projectId": "UTqn28f6R1p769DR8PnqU",
@@ -104,7 +118,7 @@
         ],
         "imageName": "f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d",
         "_id": "64595bbff008a538c2df6298",
-        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=bf94c5eed996727d34d470f0b2e78858b5dd18330a5a7ba4cf91dbf091714613&X-Amz-SignedHeaders=host&x-id=GetObject"
+        "imageUrl": ["./audiophile-1.webp", "./audiophile-2.webp"]
     },
     {
         "projectId": "UTqn28f6R1p769DRdsw8PnqU",
@@ -134,7 +148,7 @@
         ],
         "imageName": "f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d",
         "_id": "64595bbff008a538c2df6298",
-        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=bf94c5eed996727d34d470f0b2e78858b5dd18330a5a7ba4cf91dbf091714613&X-Amz-SignedHeaders=host&x-id=GetObject"
+        "imageUrl": ["./find-my-professor-1.webp", "./find-my-professor-2.webp"]
     },
     {
         "projectId": "UTqn28f6R1p769DRdsw8PnqU",
@@ -164,7 +178,7 @@
         ],
         "imageName": "f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d",
         "_id": "64595bbff008a538c2df6298",
-        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=bf94c5eed996727d34d470f0b2e78858b5dd18330a5a7ba4cf91dbf091714613&X-Amz-SignedHeaders=host&x-id=GetObject"
+        "imageUrl": ["./open-courses-1.webp", "./open-courses-2.webp"]
     },
     {
         "projectId": "UTqn28f6R1p769DRdsw8PnqU",
@@ -204,7 +218,7 @@
         ],
         "imageName": "f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d",
         "_id": "64595bbff008a538c2df6298",
-        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=bf94c5eed996727d34d470f0b2e78858b5dd18330a5a7ba4cf91dbf091714613&X-Amz-SignedHeaders=host&x-id=GetObject"
+        "imageUrl": ["./excellent-ed-1.webp", "./excellent-ed-2.webp"]
     },
     {
         "projectId": "UTqn28f6R1p769DRdsw8PnqU",
@@ -244,7 +258,7 @@
         ],
         "imageName": "f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d",
         "_id": "64595bbff008a538c2df6298",
-        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=bf94c5eed996727d34d470f0b2e78858b5dd18330a5a7ba4cf91dbf091714613&X-Amz-SignedHeaders=host&x-id=GetObject"
+        "imageUrl": ["./fitness-forge-1.webp", "./fitness-forge-2.webp"]
     },
     {
         "projectId": "UTqn28f6R1p769DRdsw8PnqU",
@@ -284,7 +298,7 @@
         ],
         "imageName": "f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d",
         "_id": "64595bbff008a538c2df6298",
-        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=bf94c5eed996727d34d470f0b2e78858b5dd18330a5a7ba4cf91dbf091714613&X-Amz-SignedHeaders=host&x-id=GetObject"
+        "imageUrl": ["./chanelle-1.webp", "./chenalle-2.webp"]
     },
     {
         "projectId": "UTqn28f6R1p769DRdsw8PnqU",
@@ -324,7 +338,7 @@
         ],
         "imageName": "f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d",
         "_id": "64595bbff008a538c2df6298",
-        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=bf94c5eed996727d34d470f0b2e78858b5dd18330a5a7ba4cf91dbf091714613&X-Amz-SignedHeaders=host&x-id=GetObject"
+        "imageUrl": ["./pasde-1.webp", "./pasde-2.webp"]
     },
     {
         "projectId": "1SyVT1rXocOPANVulSbYj",
@@ -353,7 +367,15 @@
         ],
         "imageName": "47cd685bd59d2ff6c1967d81f088a670bfac6a391324811a1584820edd9246b5",
         "_id": "64595bf0f008a538c2df62a3",
-        "imageUrl": "./karoz-img.webp"
+        "imageUrl": [
+            "./karoz-1.webp",
+            "./karoz-2.webp",
+            "./karoz-3.webp",
+            "./karoz-4.webp",
+            "./karoz-5.webp",
+            "./karoz-6.webp",
+            "./karoz-7.webp"
+        ]
     },
     {
         "projectId": "LD1pLyoyKRiOjTvDJ2ikE",
@@ -382,7 +404,7 @@
         ],
         "imageName": "5a1db7191f780d96210791164b1e9f17ba8a05ed2b4673639828f14d9be4a307",
         "_id": "64595c1ef008a538c2df62b1",
-        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/5a1db7191f780d96210791164b1e9f17ba8a05ed2b4673639828f14d9be4a307?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=f3400bb117bfb11d944191762037a6aaf0011c3048206da8a3f5dc43fb311c2d&X-Amz-SignedHeaders=host&x-id=GetObject"
+        "imageUrl": ["./sensuro-1.webp", "./sensuro-2.webp"]
     },
     {
         "projectId": "XA2Geu8mN1-aUTYDsakr4",
@@ -416,42 +438,9 @@
         ],
         "imageName": "46b960df086070567b6885b90c67f7c0b8012b7d0ead5c224ff6d0a6de933881",
         "_id": "64595c69f008a538c2df62d2",
-        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/46b960df086070567b6885b90c67f7c0b8012b7d0ead5c224ff6d0a6de933881?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=6fd9c2579f861c6314f1c78a0f451742a4e6dc32959a63a623bbc1702421aa20&X-Amz-SignedHeaders=host&x-id=GetObject"
+        "imageUrl": ["./restaurant-1.webp", "./restaurant-2.webp"]
     },
-    {
-        "projectId": "Xdihn19F8aYM68QBJ4-9Z",
-        "title": "Lazy Reader",
-        "description": "A website that generates a summarized version of the top posts from Reddit. Built with React for the front-end, utilizing a restful API built with Node and Express with a MongoDB database.",
-        "githubUrl": "https://github.com/oalva-rez/LazyReader-Frontend",
-        "liveUrl": "https://lazyreader456.web.app/",
-        "featured": false,
-        "wip": false,
-        "techSelect": [
-            {
-                "id": 98,
-                "file_name": "css.png",
-                "tech_name": "Css"
-            },
-            {
-                "id": 72,
-                "file_name": "reactjs.png",
-                "tech_name": "React"
-            },
-            {
-                "id": 111,
-                "file_name": "nodejs.png",
-                "tech_name": "Node"
-            },
-            {
-                "id": 103,
-                "file_name": "mongodb.png",
-                "tech_name": "MongoDB"
-            }
-        ],
-        "imageName": "a0d90799a52d48da06dddfca226271a9bb78318543ab5e532388ea8ccfc554de",
-        "_id": "64595c95f008a538c2df62e6",
-        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/a0d90799a52d48da06dddfca226271a9bb78318543ab5e532388ea8ccfc554de?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=7fa6f006c14d6977e1746d0a7c2683d87b17d0c54d3ff9b33ddab9dc61c1a74d&X-Amz-SignedHeaders=host&x-id=GetObject"
-    },
+
     {
         "projectId": "fE7chAeT69AixjAu2OWpB",
         "title": "CV Generator",
@@ -474,7 +463,7 @@
         ],
         "imageName": "2e7ca94e379be11bb7eb5282cc83ae597b84a4b443a9ca64330ca3934db0a0eb",
         "_id": "64595ce4f008a538c2df62fd",
-        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/2e7ca94e379be11bb7eb5282cc83ae597b84a4b443a9ca64330ca3934db0a0eb?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=f80195537974b4951eb39ef6effdda86ed434f059cdc35846e2a24814ed59a05&X-Amz-SignedHeaders=host&x-id=GetObject"
+        "imageUrl": ["cv-1.webp", "cv-2.webp"]
     },
     {
         "projectId": "fSO8fEIquXcCICXnL2lHc",
@@ -513,7 +502,7 @@
         ],
         "imageName": "1a1d0c83f7671284bf34d2bd4b32ea3f5b65fc92dbc9e43b8ec66b5b68aa2ccd",
         "_id": "64595d15f008a538c2df6317",
-        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/1a1d0c83f7671284bf34d2bd4b32ea3f5b65fc92dbc9e43b8ec66b5b68aa2ccd?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=f11a649d766919028fbf3aa1ccbbd6d0a073456b46ef4fe91b1cba1b8c38ffb7&X-Amz-SignedHeaders=host&x-id=GetObject"
+        "imageUrl": ["./premy-2.webp", "./premy-1.webp"]
     },
     {
         "projectId": "BAoJjqwuQO8H-TuMq0zPT",
@@ -537,35 +526,6 @@
         ],
         "imageName": "2e02b4e70d9633fde55c85039d6723eb2ea35c5740880dc0dfdca8fcd4e9ff9e",
         "_id": "64595d39f008a538c2df6334",
-        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/2e02b4e70d9633fde55c85039d6723eb2ea35c5740880dc0dfdca8fcd4e9ff9e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=8259313e163e06452332f00b64ad5b190b0dc4e37956883f75563fb34632016b&X-Amz-SignedHeaders=host&x-id=GetObject"
-    },
-    {
-        "projectId": "nwj5MncpbKTr5-X7BamTN",
-        "title": "Personal Portfolio",
-        "description": "I take great pride in my personal portfolio, as it represents the culmination of countless hours of hard work and dedication. With every project I add to the portfolio, I am constantly pushing myself to improve my skills and create more innovative and effective solutions.",
-        "githubUrl": "https://github.com/oalva-rez/ozkaralvarez",
-        "liveUrl": "n/a",
-        "featured": false,
-        "wip": false,
-        "techSelect": [
-            {
-                "id": 40,
-                "file_name": "sass.png",
-                "tech_name": "Sass"
-            },
-            {
-                "id": 72,
-                "file_name": "reactjs.png",
-                "tech_name": "React"
-            },
-            {
-                "id": 111,
-                "file_name": "nodejs.png",
-                "tech_name": "Node"
-            }
-        ],
-        "imageName": "4f7f68200cfde7380903325669936b07c9e3f4b4b63ff4726ee0ec96221e30c0",
-        "_id": "646133e0831b24df4599f023",
-        "imageUrl": "https://portfolio-cms.s3.us-west-2.amazonaws.com/4f7f68200cfde7380903325669936b07c9e3f4b4b63ff4726ee0ec96221e30c0?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAX75LIZMDTACMJQO2%2F20231126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231126T211146Z&X-Amz-Expires=3600&X-Amz-Signature=a7c11f9141d4c3b4f4ba5f566ee1a2e73aeb129ac74eee242c6369393c94dc37&X-Amz-SignedHeaders=host&x-id=GetObject"
+        "imageUrl": ["./quiz-1.webp", "./quiz-2.webp"]
     }
 ]
