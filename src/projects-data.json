@@ -21,12 +21,12 @@
             {
                 "id": 40,
                 "file_name": "sass.png",
-                "tech_name": "Sass"
+                "tech_name": "SCSS"
             },
             {
                 "id": 111,
                 "file_name": "nodejs.png",
-                "tech_name": "Node"
+                "tech_name": "Node.js"
             },
             {
                 "id": 103,
@@ -50,7 +50,7 @@
     {
         "projectId": "UTqn28f6R1p769DR8PnqU",
         "title": "Audiophile",
-        "description": "A fully responsive, e-commerce website for audio equipment. Built with React, and TypeScript. Uses React Router v6 for routing and URL params for product ID.",
+        "description": "A fully responsive, e-commerce website for audio equipment. Built with React.js, and TypeScript. Uses React.js Router v6 for routing and URL params for product ID.",
         "githubUrl": "https://github.com/oalva-rez/audiophile",
         "liveUrl": "https://audiophile-10.web.app/",
         "featured": false,
@@ -69,7 +69,7 @@
             {
                 "id": 72,
                 "file_name": "react.png",
-                "tech_name": "React"
+                "tech_name": "React.js"
             }
         ],
         "imageName": "f8e9b3ea3840ceb7a91443ddb8b31dcc8c29c3a82d27cbc388b263e43ca4590d",
@@ -89,7 +89,7 @@
             {
                 "id": 98,
                 "file_name": "css.png",
-                "tech_name": "React"
+                "tech_name": "React.js"
             },
             {
                 "id": 95,
@@ -299,21 +299,21 @@
     {
         "projectId": "1SyVT1rXocOPANVulSbYj",
         "title": "Karoz",
-        "description": "A Kanban project management app allowing users to create and manage project flows. Built with React, ContextAPI for state management, and Firebase.",
+        "description": "A Kanban project management app allowing users to create and manage project flows. Built with React.js, ContextAPI for state management, and Firebase.",
         "githubUrl": "https://github.com/oalva-rez/karoz/tree/firebase",
         "liveUrl": "https://karoz-3c7bb.web.app/login",
         "featured": true,
         "wip": false,
         "techSelect": [
             {
-                "id": 98,
-                "file_name": "css.png",
-                "tech_name": "Css"
-            },
-            {
                 "id": 72,
                 "file_name": "reactjs.png",
-                "tech_name": "React"
+                "tech_name": "React.js"
+            },
+            {
+                "id": 98,
+                "file_name": "css.png",
+                "tech_name": "CSS"
             },
             {
                 "id": 36,
@@ -336,7 +336,7 @@
     {
         "projectId": "DBRCHZ9h2Zzcsy_yfDvYOv",
         "title": "Plan My Semester",
-        "description": "A college class schedule generator with an advanced algorithm for generating conflict-free schedules. Fully custom UI built with React and SCSS.",
+        "description": "A college class schedule generator with an advanced algorithm for generating conflict-free schedules. Fully custom UI built with React.js and SCSS.",
         "githubUrl": false,
         "liveUrl": "n/a",
         "featured": true,
@@ -345,7 +345,7 @@
             {
                 "id": 72,
                 "file_name": "reactjs.png",
-                "tech_name": "React"
+                "tech_name": "React.js"
             },
             {
                 "id": 74,
@@ -355,7 +355,7 @@
             {
                 "id": 111,
                 "file_name": "nodejs.png",
-                "tech_name": "Node"
+                "tech_name": "Node.js"
             },
             {
                 "id": 103,
@@ -378,19 +378,20 @@
         "wip": false,
         "techSelect": [
             {
-                "id": 98,
-                "file_name": "css.png",
-                "tech_name": "Css"
-            },
-            {
                 "id": 72,
                 "file_name": "reactjs.png",
-                "tech_name": "React"
+                "tech_name": "React.js"
             },
+            {
+                "id": 98,
+                "file_name": "css.png",
+                "tech_name": "CSS"
+            },
+
             {
                 "id": 111,
                 "file_name": "nodejs.png",
-                "tech_name": "Node"
+                "tech_name": "Node.js"
             },
             {
                 "id": 103,
@@ -400,7 +401,7 @@
             {
                 "id": 41,
                 "file_name": "aws.png",
-                "tech_name": "Aws"
+                "tech_name": "AWS"
             }
         ],
         "imageName": "bb8be50f491a41df4565fbb6982e1d88e6cfb56dae4bb0276ab669fcd65d2b21",
@@ -416,21 +417,21 @@
     {
         "projectId": "LD1pLyoyKRiOjTvDJ2ikE",
         "title": "Shopping Cart",
-        "description": "Mock store website built with React. Implements TDD practices using Jest and React Testing Library. Uses React Router v6 for routing and URL params for product ID.",
+        "description": "Mock store website built with React.js. Implements TDD practices using Jest and React.js Testing Library. Uses React.js Router v6 for routing and URL params for product ID.",
         "githubUrl": "https://github.com/oalva-rez/shopping-cart",
         "liveUrl": "https://shopping-cart123.web.app/",
         "featured": false,
         "wip": false,
         "techSelect": [
             {
+                "id": 72,
+                "file_name": "reactjs.png",
+                "tech_name": "React.js"
+            },
+            {
                 "id": 98,
                 "file_name": "css.png",
                 "tech_name": "Css"
-            },
-            {
-                "id": 72,
-                "file_name": "reactjs.png",
-                "tech_name": "React"
             },
             {
                 "id": 97,
@@ -480,7 +481,7 @@
     {
         "projectId": "fE7chAeT69AixjAu2OWpB",
         "title": "CV Generator",
-        "description": "A simple CV generator built with React. Users can add their information and download a PDF version of their CV.",
+        "description": "A simple CV generator built with React.js. Users can add their information and download a PDF version of their CV.",
         "githubUrl": "https://github.com/oalva-rez/cv-generator",
         "liveUrl": "https://oalva-rez.github.io/cv-generator/",
         "featured": false,
@@ -494,7 +495,7 @@
             {
                 "id": 72,
                 "file_name": "reactjs.png",
-                "tech_name": "React"
+                "tech_name": "React.js"
             }
         ],
         "imageName": "2e7ca94e379be11bb7eb5282cc83ae597b84a4b443a9ca64330ca3934db0a0eb",
@@ -543,7 +544,7 @@
     {
         "projectId": "BAoJjqwuQO8H-TuMq0zPT",
         "title": "Quiz App",
-        "description": "A quiz app built with React. The app uses the Open Trivia Database API.",
+        "description": "A quiz app built with React.js. The app uses the Open Trivia Database API.",
         "githubUrl": "https://github.com/oalva-rez/quiz-app",
         "liveUrl": "https://oalva-rez.github.io/quiz-app/",
         "featured": false,
@@ -557,7 +558,7 @@
             {
                 "id": 72,
                 "file_name": "reactjs.png",
-                "tech_name": "React"
+                "tech_name": "React.js"
             }
         ],
         "imageName": "2e02b4e70d9633fde55c85039d6723eb2ea35c5740880dc0dfdca8fcd4e9ff9e",
