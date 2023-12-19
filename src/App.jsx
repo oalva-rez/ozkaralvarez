@@ -9,6 +9,7 @@ import BlogPost from "./pages/blogPost/BlogPost";
 import Contact from "./pages/contact/Contact";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
+import ChatBot from "./components/chatBot/ChatBot";
 import Code404 from "./pages/Code404/Code404";
 import ReactGA from "react-ga4";
 
@@ -49,6 +50,7 @@ function App() {
                     <Route exact path="/contact" element={<Contact />} />
                     <Route path="*" element={<Code404 />} />
                 </Routes>
+                <ChatBot isMobile={isMobile} />
                 <Footer isMobile={isMobile} />
             </BrowserRouter>
         </div>

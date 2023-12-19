@@ -1,0 +1,304 @@
+@import "../../styles/fonts";
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.chatbot-messages,
+.chatbot-button {
+    position: fixed;
+    z-index: 9999;
+    transition: transform 0.3s ease-in-out;
+}
+
+.chatbot-messages {
+    right: 80px;
+    bottom: 40px; // Adjust this value as needed
+    width: 320px; // Adjust width as per your design
+    height: 80vh; // Adjust height as per your design
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    transform: translateY(200%); // Starts off-screen
+    display: flex;
+    flex-direction: column;
+    &.chat-open {
+        transform: translateY(0); // Slides into view
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 18px;
+        box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+        z-index: 9999;
+        .ozkar-img-container {
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                height: 13px;
+                width: 13px;
+                border-radius: 50%;
+                background-color: rgb(106, 255, 106);
+                bottom: 2px;
+                right: 2px;
+            }
+        }
+        .ozkar-img {
+            width: 60px;
+            height: 60px;
+            position: relative;
+        }
+        .header-text {
+            flex: 1;
+            align-self: center;
+            h4 {
+                font-size: 20px;
+                color: $dark-blue;
+                font-family: sans-serif;
+                margin-bottom: 0px;
+                display: flex;
+                align-items: center;
+                font-weight: 600;
+            }
+            p {
+                font-size: 14px;
+                color: $dark-grey;
+                font-weight: 300;
+                font-family: "SFMono", sans-serif;
+                margin-bottom: 0px;
+            }
+        }
+        .close-chat {
+            align-self: flex-start;
+            cursor: pointer;
+        }
+    }
+
+    .chat-content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        background-color: #eaeef2;
+        overflow-y: scroll;
+        padding: 0px 17px 10px;
+        height: 100%;
+        // second to last last child with class of chat-message
+        .chat-message:nth-last-child(2) {
+            margin-bottom: 10px;
+        }
+        .error {
+            text-align: center;
+            font-size: 14px;
+            color: #ff0000;
+            font-weight: 300;
+            font-family: sans-serif;
+        }
+        .chat-message {
+            display: flex;
+            flex-direction: column;
+            .message {
+                flex: 1;
+                padding: 7px 8px;
+                font-size: 14px;
+                font-family: sans-serif;
+                font-weight: 400;
+                margin: 3px 0 3px;
+                border-radius: 8px;
+                max-width: max-content;
+                line-height: calc(14px * 1.3);
+            }
+            &.bot {
+                .message {
+                    background-color: #fdfdfd;
+                    color: $dark-blue;
+                    border-top-left-radius: 0px;
+                }
+            }
+            &.user {
+                align-self: flex-end;
+                justify-self: flex-end;
+                .message {
+                    background-color: #0066ff;
+                    color: white;
+                    border-top-right-radius: 0px;
+                }
+                .sender {
+                    margin-left: 0px;
+                    margin-bottom: 0px;
+                    justify-self: flex-end;
+                    align-self: flex-end;
+                }
+            }
+        }
+        .sender {
+            display: flex;
+            align-items: center;
+            margin-bottom: -5px;
+            margin-left: -5px;
+            font-size: 13px;
+            color: $dark-blue;
+            font-family: sans-serif;
+            font-weight: 400;
+            margin-top: 10px;
+            img {
+                transform: scale(0.6);
+                width: 2px;
+                height: auto;
+            }
+            span {
+                font-family: sans-serif;
+            }
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: #f1f1f1;
+        }
+
+        /* Styling the scrollbar handle */
+        &::-webkit-scrollbar-thumb {
+            background-color: darkgrey;
+            border-radius: 10px;
+
+            /* Creating a hover effect for the scrollbar handle */
+            &:hover {
+                background-color: #555;
+            }
+        }
+
+        /* Changing the width of the scrollbar */
+        &::-webkit-scrollbar {
+            width: 6px;
+            padding: 0px 2px;
+        }
+    }
+    .input {
+        display: flex;
+        align-items: center;
+        box-shadow: 0px -4px 6px -1px rgba(0, 0, 0, 0.1);
+        border: 1px solid lightgrey;
+        textarea {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            max-height: auto;
+            resize: none;
+            font-weight: 300;
+            font-size: 16px;
+            padding: 15px 15px;
+            display: flex;
+            align-items: center;
+            font-family: sans-serif;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            line-height: normal;
+        }
+        img {
+            width: 25px;
+            height: 25px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+    }
+    .footer {
+        height: 35px;
+        background-color: #f9f9f9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        a {
+            font-size: 12px;
+            text-decoration: underline;
+            color: #a0a0a0;
+            font-weight: 300;
+        }
+    }
+}
+
+.chatbot-button {
+    bottom: 40px;
+    right: 80px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #64ffda;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    display: grid;
+    place-content: center;
+
+    &:hover {
+        background-color: #4acfb0;
+    }
+
+    &.chat-open {
+        transform: translateY(
+            200%
+        ); // Adjust this value as needed to slide down
+    }
+}
+
+// typing animation
+// credit to Bilal Ck
+// Codepen: https://codepen.io/bilalck/pen/jdGGNW
+
+.chat-bubble {
+    background-color: #fdfdfd;
+    padding: 10px 23px;
+    -webkit-border-radius: 8px;
+    -webkit-border-bottom-left-radius: 2px;
+    -moz-border-radius: 8px;
+    -moz-border-radius-bottomleft: 2px;
+    border-radius: 8px;
+    border-bottom-left-radius: 2px;
+    display: inline-block;
+    width: max-content;
+    margin-top: auto;
+}
+.typing {
+    align-items: center;
+    display: flex;
+    height: 10px;
+}
+.typing .dot {
+    animation: mercuryTypingAnimation 1.8s infinite ease-in-out;
+    background-color: lightgray; //rgba(20,105,69,.7);
+    border-radius: 50%;
+    height: 7px;
+    margin-right: 4px;
+    vertical-align: middle;
+    width: 7px;
+    display: inline-block;
+}
+.typing .dot:nth-child(1) {
+    animation-delay: 200ms;
+}
+.typing .dot:nth-child(2) {
+    animation-delay: 300ms;
+}
+.typing .dot:nth-child(3) {
+    animation-delay: 400ms;
+}
+.typing .dot:last-child {
+    margin-right: 0;
+}
+
+@keyframes mercuryTypingAnimation {
+    0% {
+        transform: translateY(0px);
+        background-color: gray; // rgba(20,105,69,.7);
+    }
+    28% {
+        transform: translateY(-7px);
+        background-color: gray; //rgba(20,105,69,.4);
+    }
+    44% {
+        transform: translateY(0px);
+        background-color: gray; //rgba(20,105,69,.2);
+    }
+}

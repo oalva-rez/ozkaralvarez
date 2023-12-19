@@ -32,6 +32,7 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr $nav-height;
     color: $light-grey;
+    position: relative;
 }
 
 .sr-only {
