@@ -2,15 +2,18 @@ import React, { useState, useRef, useEffect } from "react";
 import messageCircle from "../../assets/message-circle.svg";
 import chatImg from "../../assets/chat-img.webp";
 import x from "../../assets/x.svg";
+import xBlue from "../../assets/x-blue.svg";
 import send from "../../assets/send.svg";
 import ChatMessage from "./ChatMessage";
 import { v4 as uuidv4 } from "uuid";
 export default function ChatBot() {
     const [uid, setUid] = useState(uuidv4());
-    const API_URL_BASE = "http://localhost:3000";
+    // const API_URL_BASE = "http://localhost:3000";
+    const API_URL_BASE = "https://portfolio-chatbot-zaeu.onrender.com";
     const [isChatBotOpen, setIsChatBotOpen] = useState(false);
     const [inputData, setInputData] = useState("");
     const [isLoading, setIsLoading] = useState(false);
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
     const [errorObj, setErrorObj] = useState({
         server: false,
         charLimit: false,
@@ -36,7 +39,6 @@ export default function ChatBot() {
         },
     ]);
     const scrollRef = useRef(null);
-
     const handleInputChange = (e) => {
         setErrorObj({
             server: false,
@@ -111,6 +113,41 @@ export default function ChatBot() {
     useEffect(() => {
         scrollRef.current?.scrollIntoView({ behavior: "smooth" });
     }, [chatMessages, isLoading]);
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsPopupOpen(true);
+        }, 300);
+
+        return () => {
+            clearTimeout(timer);
+        };
+    }, []);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (
+                isPopupOpen &&
+                !document.querySelector(".popup").contains(event.target)
+            ) {
+                setIsPopupOpen(false);
+            } else if (
+                isChatBotOpen &&
+                !document
+                    .querySelector(".chatbot-messages")
+                    .contains(event.target)
+            ) {
+                setIsChatBotOpen(false);
+            }
+        };
+
+        // Attach the listeners on component mount.
+        document.addEventListener("mousedown", handleClickOutside);
+
+        // Detach the listeners on component unmount.
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [isPopupOpen, isChatBotOpen]);
     return (
         <>
             <div
@@ -183,6 +220,13 @@ export default function ChatBot() {
                         placeholder="Type Your Message Here"
                         onChange={handleInputChange}
                         value={inputData}
+                        disabled={isLoading}
+                        onKeyDown={(event) => {
+                            if (event.key === "Enter" && !isLoading) {
+                                event.preventDefault();
+                                handleChatSubmit();
+                            }
+                        }}
                     />
                     <img
                         src={send}
@@ -192,7 +236,14 @@ export default function ChatBot() {
                     />
                 </div>
                 <div className="footer">
-                    <a href="#">View Source Code</a>
+                    <span>built by Ozkar | </span>
+                    <a
+                        href="https://github.com/oalva-rez/portfolio-chat-bot"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Source Code
+                    </a>
                 </div>
             </div>
             <div
@@ -201,9 +252,32 @@ export default function ChatBot() {
                         ? "chatbot-button chat-open"
                         : "chatbot-button"
                 }
-                onClick={() => setIsChatBotOpen(!isChatBotOpen)}
+                onClick={(e) => {
+                    e.stopPropagation();
+                    if (e.target.classList.contains("popup")) return;
+                    setIsChatBotOpen(!isChatBotOpen);
+                    setIsPopupOpen(false);
+                }}
             >
-                <img src={messageCircle} alt="message circle bubble" />
+                <img
+                    src={messageCircle}
+                    alt="message circle bubble"
+                    className="bubble-message-icon"
+                />
+
+                <div className={isPopupOpen ? "popup open" : "popup"}>
+                    Hey there! 👋 <br />
+                    Chat with Ozkar.ai 🤖
+                    <img
+                        src={xBlue}
+                        alt="close popup"
+                        className="close-popup"
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            setIsPopupOpen(false);
+                        }}
+                    />
+                </div>
             </div>
         </>
     );
