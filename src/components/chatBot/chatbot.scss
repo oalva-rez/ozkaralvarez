@@ -208,12 +208,16 @@
         justify-content: center;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
+        gap: 6px;
         a {
             font-size: 12px;
             text-decoration: underline;
             color: #a0a0a0;
             font-weight: 300;
         }
+        font-size: 12px;
+        color: #a0a0a0;
+        font-weight: 300;
     }
 }
 
@@ -240,6 +244,40 @@
         transform: translateY(
             200%
         ); // Adjust this value as needed to slide down
+    }
+
+    .popup {
+        // Initial state (hidden)
+        position: absolute;
+        visibility: hidden; // Hide the popup
+        opacity: 0; // Make the popup fully transparent
+        transform: translate(-50%, -50%); // Position the popup
+        transition: visibility 0s, opacity 0.5s linear, transform 0.5s ease; // Transition for opacity and transform
+        cursor: initial;
+        // When the popup is open
+        &.open {
+            top: -60px;
+            left: -200px;
+            background-color: #ffffffd8;
+            color: black;
+            padding: 10px;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 18px;
+            border-bottom-right-radius: 0px;
+            width: max-content;
+
+            visibility: visible; // Show the popup
+            opacity: 1; // Make the popup fully opaque
+            transform: translate(0, 0); // Move the popup to its final position
+        }
+        .close-popup {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            padding: 3px;
+            cursor: pointer;
+        }
     }
 }
 
@@ -300,5 +338,23 @@
     44% {
         transform: translateY(0px);
         background-color: gray; //rgba(20,105,69,.2);
+    }
+}
+
+// media query at 734px and below
+@media (max-width: 734px) {
+    .chatbot-button {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        .bubble-message-icon {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .chatbot-messages {
+        right: 20px;
+        bottom: 20px;
     }
 }
