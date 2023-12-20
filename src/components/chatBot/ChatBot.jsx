@@ -16,6 +16,12 @@ export default function ChatBot() {
         charLimit: false,
         emptyInput: false,
     });
+    const [options, setOptions] = useState([
+        "Professional Experience?",
+        "Whats TrayectoAI?",
+        "Favorite Project?",
+        "Favorite Programming Language?",
+    ]);
     const [chatMessages, setChatMessages] = useState([
         {
             message:
@@ -47,8 +53,9 @@ export default function ChatBot() {
             return e.target.value;
         });
     };
-    const handleChatSubmit = async () => {
-        if (inputData.trim() === "") {
+
+    const handleChatSubmit = async (option) => {
+        if (inputData.trim() === "" && !option) {
             setErrorObj((prev) => {
                 return { ...prev, emptyInput: true };
             });
@@ -60,10 +67,10 @@ export default function ChatBot() {
             emptyInput: false,
         });
         let prevMessages;
+        let inputString = option ? option : inputData;
         setChatMessages((prev) => {
-            prevMessages = [...prev, { message: inputData, sender: "user" }];
-            console.log(prevMessages);
-            return [...prev, { message: inputData, sender: "user" }];
+            prevMessages = [...prev, { message: inputString, sender: "user" }];
+            return [...prev, { message: inputString, sender: "user" }];
         });
 
         setIsLoading(true);
@@ -77,7 +84,7 @@ export default function ChatBot() {
                 },
                 body: JSON.stringify({
                     uid,
-                    userInput: inputData,
+                    userInput: inputString,
                 }),
             });
             const data = await response.json();
@@ -156,6 +163,19 @@ export default function ChatBot() {
                         {errorObj.emptyInput &&
                             "You cannot leave the text area blank."}
                     </div>
+                </div>
+                <div className="choices">
+                    {options.map((option, index) => (
+                        <div key={index} className="choice">
+                            <button
+                                onClick={() => {
+                                    handleChatSubmit(option);
+                                }}
+                            >
+                                {option}
+                            </button>
+                        </div>
+                    ))}
                 </div>
                 <div className="input">
                     <textarea
