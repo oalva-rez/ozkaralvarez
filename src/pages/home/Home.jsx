@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import ReactGA from "react-ga4";
 
@@ -13,7 +13,6 @@ import typescript from "../../assets/tech-icons/typescript.png";
 import ozkar from "../../assets/ozkar-light.webp";
 
 function Home() {
-    const navigation = useNavigate();
     useEffect(() => {
         ReactGA.send({
             hitType: "pageview",
@@ -43,8 +42,8 @@ function Home() {
                         realm of innovation and engineering.
                     </p>
                     <div className="home--buttons">
-                        <a href="/about">About</a>
-                        <a href="/projects">Projects</a>
+                        <Link to="/about">About</Link>
+                        <Link to="/projects">Projects</Link>
                     </div>
                     <div className="hr-line"></div>
                     <div className="tech-stack">

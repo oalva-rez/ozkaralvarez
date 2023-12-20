@@ -5,6 +5,7 @@ import x from "../../assets/x.svg";
 import xBlue from "../../assets/x-blue.svg";
 import send from "../../assets/send.svg";
 import ChatMessage from "./ChatMessage";
+import aiStars from "../../assets/ai-stars.svg";
 import { v4 as uuidv4 } from "uuid";
 export default function ChatBot() {
     const [uid, setUid] = useState(uuidv4());
@@ -22,8 +23,8 @@ export default function ChatBot() {
     const [options, setOptions] = useState([
         "Professional Experience?",
         "Whats TrayectoAI?",
-        "Favorite Project?",
         "Favorite Programming Language?",
+        "I can help you escape the matrix!",
     ]);
     const [chatMessages, setChatMessages] = useState([
         {
@@ -39,6 +40,7 @@ export default function ChatBot() {
         },
     ]);
     const scrollRef = useRef(null);
+    const textareaRef = useRef(null);
     const handleInputChange = (e) => {
         setErrorObj({
             server: false,
@@ -56,7 +58,7 @@ export default function ChatBot() {
         });
     };
 
-    const handleChatSubmit = async (option) => {
+    const handleChatSubmit = async (option = null) => {
         if (inputData.trim() === "" && !option) {
             setErrorObj((prev) => {
                 return { ...prev, emptyInput: true };
@@ -112,6 +114,7 @@ export default function ChatBot() {
     };
     useEffect(() => {
         scrollRef.current?.scrollIntoView({ behavior: "smooth" });
+        textareaRef.current.focus();
     }, [chatMessages, isLoading]);
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -203,15 +206,16 @@ export default function ChatBot() {
                 </div>
                 <div className="choices">
                     {options.map((option, index) => (
-                        <div key={index} className="choice">
-                            <button
-                                onClick={() => {
-                                    handleChatSubmit(option);
-                                }}
-                            >
-                                {option}
-                            </button>
-                        </div>
+                        <button
+                            onClick={() => {
+                                handleChatSubmit(option);
+                            }}
+                            key={index}
+                            className="choice"
+                        >
+                            <img src={aiStars} alt="stars" />
+                            {option}
+                        </button>
                     ))}
                 </div>
                 <div className="input">
@@ -227,16 +231,19 @@ export default function ChatBot() {
                                 handleChatSubmit();
                             }
                         }}
-                    />
+                        ref={textareaRef}
+                    ></textarea>
                     <img
                         src={send}
                         alt="send"
                         className="send"
-                        onClick={handleChatSubmit}
+                        onClick={() => {
+                            handleChatSubmit();
+                        }}
                     />
                 </div>
                 <div className="footer">
-                    <span>built by Ozkar | </span>
+                    <span>Handcrafted by Ozkar | </span>
                     <a
                         href="https://github.com/oalva-rez/portfolio-chat-bot"
                         target="_blank"

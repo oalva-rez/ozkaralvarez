@@ -171,10 +171,62 @@
             padding: 0px 2px;
         }
     }
+    .choices {
+        display: flex;
+        overflow-x: scroll;
+        align-items: center;
+        background-color: white;
+        box-shadow: 0px -4px 6px -1px rgba(0, 0, 0, 0.1);
+        padding-right: 7px;
+        // height: 0px;
+        .choice {
+            background-color: #f4f2ee;
+            font-family: sans-serif;
+            font-size: 14px;
+            // text-align: center;
+            padding: 10px 15px;
+            border: none;
+            min-width: max-content;
+            margin: 7px;
+            border-radius: 12px;
+            border-bottom-right-radius: 0px;
+            transition: background-color 0.3s ease; // Add this line
+            display: flex;
+            align-items: center;
+            color: black;
+            img {
+                height: 20px;
+                width: auto;
+                margin-left: -5px;
+            }
+            cursor: pointer;
+            &:hover {
+                background-color: #eae6df;
+            }
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #f1f1f1;
+        }
+
+        /* Styling the scrollbar handle */
+        &::-webkit-scrollbar-thumb {
+            background-color: darkgrey;
+            border-radius: 10px;
+            /* Creating a hover effect for the scrollbar handle */
+            &:hover {
+                background-color: #555;
+            }
+        }
+
+        /* Changing the width of the scrollbar */
+        &::-webkit-scrollbar {
+            height: 6px;
+            padding: 0px 2px;
+        }
+    }
     .input {
         display: flex;
         align-items: center;
-        box-shadow: 0px -4px 6px -1px rgba(0, 0, 0, 0.1);
         border: 1px solid lightgrey;
         textarea {
             display: flex;

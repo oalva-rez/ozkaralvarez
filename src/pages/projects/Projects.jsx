@@ -27,10 +27,6 @@ function Projects() {
         try {
             (async () => {
                 setIsLoading(true);
-                // const projects = await getProjects();
-                // const sortedProjects = projects.projects.sort((a, b) => {
-                //     return a.title === "TrayectoAI" ? -1 : 1;
-                // });
                 const sortedProjects = projectData.sort((a, b) => {
                     return a.title === "TrayectoAI" ? -1 : 1;
                 });
@@ -130,7 +126,9 @@ function Projects() {
                                                     )}
                                                 </p>
                                                 <div className="sec--links">
-                                                    {project.githubUrl ? (
+                                                    {project.githubUrl &&
+                                                    project.githubUrl !==
+                                                        "n/a" ? (
                                                         <a
                                                             href={
                                                                 project.githubUrl
@@ -141,7 +139,9 @@ function Projects() {
                                                             <i className="fab fa-github"></i>
                                                         </a>
                                                     ) : null}
-                                                    {project.liveUrl ? (
+                                                    {project.liveUrl &&
+                                                    project.liveUrl !==
+                                                        "n/a" ? (
                                                         <a
                                                             href={
                                                                 project.liveUrl
