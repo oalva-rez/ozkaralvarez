@@ -1,4 +1,6 @@
 import React from "react";
+import { Carousel } from "react-bootstrap";
+
 import ReactGA from "react-ga4";
 const GA__handleProjectClick = (project) => {
     ReactGA.event({
@@ -14,19 +16,38 @@ function FeaturedProject({ project }) {
                 GA__handleProjectClick(project);
             }}
         >
-            <a
-                href={
-                    project.liveUrl === "n/a"
-                        ? project.githubUrl
-                        : project.liveUrl
-                }
-                className="project--image"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <img src={project.imageUrl} alt={project.title} />
-                <div className="image-overlay"></div>
-            </a>
+            <div className="project--image">
+                {/* <img src={project.imageUrl} alt={project.title} /> */}
+                <Carousel
+                    className="c-img"
+                    data-bs-theme="dark"
+                    interval={null}
+                >
+                    {project.imageUrl.map((image, index) => (
+                        <Carousel.Item key={index + image}>
+                            <img
+                                className="d-block w-100"
+                                src={image}
+                                alt={project.title}
+                            />
+                        </Carousel.Item>
+                    ))}
+                    {/* <Carousel.Item className="brad">
+                        <img
+                            className="d-block w-100"
+                            src={project.imageUrl}
+                            alt={project.title}
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item className="brad">
+                        <img
+                            className="d-block w-100"
+                            src={project.imageUrl}
+                            alt={project.title}
+                        />
+                    </Carousel.Item> */}
+                </Carousel>
+            </div>
             <div className="project--content">
                 <p className="p-fp">Featured Project</p>
                 <h2 className="p-title">{project.title}</h2>
@@ -46,7 +67,7 @@ function FeaturedProject({ project }) {
                         <p className="p-wip">Work In Progress</p>
                     ) : null}
                     <div className="project--links">
-                        {project.githubUrl !== "n/a" ? (
+                        {project.githubUrl ? (
                             <a
                                 href={project.githubUrl}
                                 target="_blank"

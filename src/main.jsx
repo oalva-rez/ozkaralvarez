@@ -21,6 +21,7 @@ import "./components/featuredProject/featuredProject.scss";
 import "./components/footer/footer.scss";
 import "./components/secondaryProject/secondaryProject.scss";
 import "./components/blogCard/blogCard.scss";
+import "./components/chatBot/chatbot.scss";
 
 // toast styles
 import "react-toastify/dist/ReactToastify.css";

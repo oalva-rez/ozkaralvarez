@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import ReactGA from "react-ga4";
 
@@ -13,7 +13,6 @@ import typescript from "../../assets/tech-icons/typescript.png";
 import ozkar from "../../assets/ozkar-light.webp";
 
 function Home() {
-    const navigation = useNavigate();
     useEffect(() => {
         ReactGA.send({
             hitType: "pageview",
@@ -37,16 +36,15 @@ function Home() {
                     <h1>Ozkar Alvarez.</h1>
                     <h2>I build things for the web.</h2>
                     <p className="content-text">
-                        Software Engineer passionate about learning new things
-                        and sharing my knowledge with others. My desire has
-                        always been to channel my creative abilities into the
-                        realm of innovation and engineering.
+                        At the heart of my journey is a love for creativity and
+                        innovation, guiding me as I turn imaginative ideas into
+                        engineering solutions.
                     </p>
                     <div className="home--buttons">
-                        <a href="/about">About</a>
-                        <a href="/projects">Projects</a>
+                        <Link to="/projects">Projects</Link>
+                        <Link to="/about">About</Link>
                     </div>
-                    <div className="hr-line"></div>
+                    {/* <div className="hr-line"></div>
                     <div className="tech-stack">
                         <h3>Ozkar's Tech Stack</h3>
                         <div>
@@ -91,7 +89,7 @@ function Home() {
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="image-pane">
                     <img

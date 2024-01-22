@@ -19,6 +19,7 @@ export const getProjects = async () => {
         },
     });
     const data = await response.json();
+    console.log(data);
     return data;
 };
 
