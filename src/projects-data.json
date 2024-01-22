@@ -81,7 +81,7 @@
         "title": "Find My Professor",
         "description": "This directory features an advanced keyword search field, enabling students to easily find detailed information about professors and their courses.",
         "professional": true,
-        "githubUrl": false,
+        "githubUrl": "https://github.com/oalva-rez/find-my-professor",
         "liveUrl": "https://www.sdmesa.edu/find-my-professor/index.html",
         "featured": false,
         "wip": false,
@@ -338,9 +338,9 @@
         "title": "Plan My Semester",
         "description": "A college class schedule generator with an advanced algorithm for generating conflict-free schedules. Fully custom UI built with React.js and SCSS.",
         "githubUrl": false,
-        "liveUrl": "n/a",
+        "liveUrl": "https://plan-my-semester.web.app/day-preference",
         "featured": true,
-        "wip": true,
+        "wip": false,
         "techSelect": [
             {
                 "id": 72,

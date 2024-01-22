@@ -14,7 +14,7 @@ function Blog() {
             (async () => {
                 setIsLoading(true);
                 const blogs = await getBlogs();
-                setBlogs(blogs.blogs);
+                setBlogs(blogs.blogs.reverse());
                 setIsLoading(false);
             })();
             ReactGA.send({
