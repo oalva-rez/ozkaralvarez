@@ -7,7 +7,7 @@ This site showcases my professional skills, projects, and personal journey as a 
 
 ## 🚨 Design Credits and Usage Rights
 
-I'm excited to share that the visual design of this portfolio was inspired by the incredibly talented [Brittany Chiang](https://github.com/bchiang7/v4?tab=readme-ov-file). While Brittany laid the groundwork with her stunning design, I, Ozkar Alvarez, have crafted the code for this React Application from the ground up. It's been a wonderful journey meshing her design with my coding.
+I'm excited to share that the visual design of this portfolio was inspired by the incredibly talented [Brittany Chiang](https://github.com/bchiang7/v4?tab=readme-ov-file). While Brittany laid the groundwork with her stunning design, I have crafted the code for this React Application from the ground up. It's been a wonderful journey meshing her design with my coding.
 If you're as impressed with Brittany's design as I am and considering using it, don't forget to check out her [guidelines](https://github.com/bchiang7/v4?tab=readme-ov-file#-forking-this-repo-please-read) on how to do so respectfully.
 
 ## Features
